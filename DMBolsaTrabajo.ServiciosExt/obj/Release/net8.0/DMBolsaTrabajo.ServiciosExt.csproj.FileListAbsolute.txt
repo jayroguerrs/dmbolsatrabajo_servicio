@@ -1,0 +1,15 @@
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\bin\Release\net8.0\DMBolsaTrabajo.ServiciosExt.deps.json
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\bin\Release\net8.0\DMBolsaTrabajo.ServiciosExt.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\bin\Release\net8.0\DMBolsaTrabajo.ServiciosExt.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\bin\Release\net8.0\DMBolsaTrabajo.Utilitarios.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\bin\Release\net8.0\DMBolsaTrabajo.Utilitarios.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.csproj.AssemblyReference.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.AssemblyInfoInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.AssemblyInfo.cs
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaT.723D670D.Up2Date
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\refint\DMBolsaTrabajo.ServiciosExt.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\DMBolsaTrabajo.ServiciosExt.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ServiciosExt\obj\Release\net8.0\ref\DMBolsaTrabajo.ServiciosExt.dll

@@ -1,0 +1,12 @@
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\bin\Debug\net8.0\DMBolsaTrabajo.ConexionBD.deps.json
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\bin\Debug\net8.0\DMBolsaTrabajo.ConexionBD.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\bin\Debug\net8.0\DMBolsaTrabajo.ConexionBD.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.csproj.AssemblyReference.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.AssemblyInfoInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.AssemblyInfo.cs
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\refint\DMBolsaTrabajo.ConexionBD.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\DMBolsaTrabajo.ConexionBD.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.ConexionBD\obj\Debug\net8.0\ref\DMBolsaTrabajo.ConexionBD.dll

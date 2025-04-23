@@ -1,0 +1,15 @@
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\bin\Debug\net8.0\DMBolsaTranajo.IRepositorio.deps.json
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\bin\Debug\net8.0\DMBolsaTranajo.IRepositorio.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\bin\Debug\net8.0\DMBolsaTranajo.IRepositorio.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\bin\Debug\net8.0\DMBolsaTrabajo.Dominio.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\bin\Debug\net8.0\DMBolsaTrabajo.Dominio.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.csproj.AssemblyReference.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.AssemblyInfoInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.AssemblyInfo.cs
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaT.D957AF68.Up2Date
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\refint\DMBolsaTranajo.IRepositorio.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\ref\DMBolsaTranajo.IRepositorio.dll

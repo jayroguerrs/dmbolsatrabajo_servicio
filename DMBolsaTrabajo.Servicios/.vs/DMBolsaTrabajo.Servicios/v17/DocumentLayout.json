@@ -1,0 +1,386 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.servicios\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06C4B83-D418-4E73-8ABE-3E10D22C48BD}|..\\DMBolsaTrabajo.Aplicacion\\DMBolsaTrabajo.Aplicacion.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.aplicacion\\usuarioaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B793EF-A84C-4FA9-8DE1-6CEDF6A9582A}|..\\DMBolsaTranajo.Repositorio\\DMBolsaTranajo.Repositorio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatranajo.repositorio\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A128FD78-0871-4C77-BA6A-551854EDD1F3}|..\\DMBolsaTranajo.IRepositorio\\DMBolsaTranajo.IRepositorio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatranajo.irepositorio\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D750643-06BB-4B38-B101-6895D3DFAE4A}|..\\DMBolsaTrabajo.IAplicacion\\DMBolsaTrabajo.IAplicacion.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.iaplicacion\\iusuarioaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06C4B83-D418-4E73-8ABE-3E10D22C48BD}|..\\DMBolsaTrabajo.Aplicacion\\DMBolsaTrabajo.Aplicacion.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.aplicacion\\puestosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.servicios\\controllers\\puestoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|solutionrelative:controllers\\puestoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.servicios\\controllers\\ubicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|solutionrelative:controllers\\ubicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ED7015D-C97D-4468-8692-AF81A17CA079}|..\\DMBolsaTrabajo.ServiciosExt\\DMBolsaTrabajo.ServiciosExt.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.serviciosext\\irecaptchaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.servicios\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.servicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1D8B9E-4DDC-406A-8FA0-1402D9D04458}|DMBolsaTrabajo.Servicios.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B793EF-A84C-4FA9-8DE1-6CEDF6A9582A}|..\\DMBolsaTranajo.Repositorio\\DMBolsaTranajo.Repositorio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatranajo.repositorio\\ubicacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A128FD78-0871-4C77-BA6A-551854EDD1F3}|..\\DMBolsaTranajo.IRepositorio\\DMBolsaTranajo.IRepositorio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatranajo.irepositorio\\iubicacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D06C4B83-D418-4E73-8ABE-3E10D22C48BD}|..\\DMBolsaTrabajo.Aplicacion\\DMBolsaTrabajo.Aplicacion.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.aplicacion\\eventoaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D750643-06BB-4B38-B101-6895D3DFAE4A}|..\\DMBolsaTrabajo.IAplicacion\\DMBolsaTrabajo.IAplicacion.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.iaplicacion\\iubicacionaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93A2E06-2371-4F5C-8178-EBDAB0EAB512}|..\\DMBolsaTrabajo.Map\\DMBolsaTrabajo.Map.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.map\\puestosmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{962C076F-A35A-4A75-B9D5-728B221CE292}|..\\DMBolsaTrabajo.Dto\\DMBolsaTrabajo.Dto.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.dto\\puestos\\puestosrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5A6B27D-E152-401A-A586-839C32B33997}|..\\DMBolsaTrabajo.Dominio\\DMBolsaTrabajo.Dominio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.dominio\\epuestos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D750643-06BB-4B38-B101-6895D3DFAE4A}|..\\DMBolsaTrabajo.IAplicacion\\DMBolsaTrabajo.IAplicacion.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.iaplicacion\\ipuestosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B793EF-A84C-4FA9-8DE1-6CEDF6A9582A}|..\\DMBolsaTranajo.Repositorio\\DMBolsaTranajo.Repositorio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatranajo.repositorio\\puestosrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{962C076F-A35A-4A75-B9D5-728B221CE292}|..\\DMBolsaTrabajo.Dto\\DMBolsaTrabajo.Dto.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.dto\\puestos\\puestosresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A128FD78-0871-4C77-BA6A-551854EDD1F3}|..\\DMBolsaTranajo.IRepositorio\\DMBolsaTranajo.IRepositorio.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatranajo.irepositorio\\ipuestosrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C2CA6D-086D-472B-A950-DD1C2474EC42}|..\\DMBolsaTrabajo.ConexionBD\\DMBolsaTrabajo.ConexionBD.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.conexionbd\\databasekeepaliveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{962C076F-A35A-4A75-B9D5-728B221CE292}|..\\DMBolsaTrabajo.Dto\\DMBolsaTrabajo.Dto.csproj|d:\\proyectos\\bolsa de trabajo\\bolsa de trabajo servicios\\dmbolsatrabajo.dto\\usuario\\usuariorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioRepositorio.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.Repositorio\\UsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTranajo.Repositorio\\UsuarioRepositorio.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.Repositorio\\UsuarioRepositorio.cs",
+              "RelativeToolTip": "..\\DMBolsaTranajo.Repositorio\\UsuarioRepositorio.cs",
+              "ViewState": "AQIAACsCAAAAAAAAAAAmwCUCAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:45:11.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUsuarioRepositorio.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.IRepositorio\\IUsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTranajo.IRepositorio\\IUsuarioRepositorio.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.IRepositorio\\IUsuarioRepositorio.cs",
+              "RelativeToolTip": "..\\DMBolsaTranajo.IRepositorio\\IUsuarioRepositorio.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwBEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:25:53.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioAplicacion.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Aplicacion\\UsuarioAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Aplicacion\\UsuarioAplicacion.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Aplicacion\\UsuarioAplicacion.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Aplicacion\\UsuarioAplicacion.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwBUAAADCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:20:02.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAqwGYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:15:54.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUsuarioAplicacion.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.IAplicacion\\IUsuarioAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.IAplicacion\\IUsuarioAplicacion.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.IAplicacion\\IUsuarioAplicacion.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.IAplicacion\\IUsuarioAplicacion.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwBkAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:18:45.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UbicacionRepositorio.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.Repositorio\\UbicacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTranajo.Repositorio\\UbicacionRepositorio.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.Repositorio\\UbicacionRepositorio.cs",
+              "RelativeToolTip": "..\\DMBolsaTranajo.Repositorio\\UbicacionRepositorio.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwDYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:44:01.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUbicacionRepositorio.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.IRepositorio\\IUbicacionRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTranajo.IRepositorio\\IUbicacionRepositorio.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.IRepositorio\\IUbicacionRepositorio.cs",
+              "RelativeToolTip": "..\\DMBolsaTranajo.IRepositorio\\IUbicacionRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:40:54.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EventoAplicacion.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Aplicacion\\EventoAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Aplicacion\\EventoAplicacion.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Aplicacion\\EventoAplicacion.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Aplicacion\\EventoAplicacion.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwCkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:38:25.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUbicacionAplicacion.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.IAplicacion\\IUbicacionAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.IAplicacion\\IUbicacionAplicacion.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.IAplicacion\\IUbicacionAplicacion.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.IAplicacion\\IUbicacionAplicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:37:23.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UbicacionController.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Controllers\\UbicacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UbicacionController.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Controllers\\UbicacionController.cs",
+              "RelativeToolTip": "Controllers\\UbicacionController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowCEAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:34:46.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRecaptchaService.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.ServiciosExt\\IRecaptchaService.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.ServiciosExt\\IRecaptchaService.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.ServiciosExt\\IRecaptchaService.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.ServiciosExt\\IRecaptchaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T16:26:30.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PuestosController.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Controllers\\PuestosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PuestosController.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Controllers\\PuestosController.cs",
+              "RelativeToolTip": "Controllers\\PuestosController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwDIAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:02:57.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PuestosAplicacion.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Aplicacion\\PuestosAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Aplicacion\\PuestosAplicacion.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Aplicacion\\PuestosAplicacion.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Aplicacion\\PuestosAplicacion.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:09:09.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PuestosRepositorio.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.Repositorio\\PuestosRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTranajo.Repositorio\\PuestosRepositorio.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.Repositorio\\PuestosRepositorio.cs",
+              "RelativeToolTip": "..\\DMBolsaTranajo.Repositorio\\PuestosRepositorio.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwHQAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:31:03.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PuestosResponseDto.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dto\\Puestos\\PuestosResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Dto\\Puestos\\PuestosResponseDto.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dto\\Puestos\\PuestosResponseDto.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Dto\\Puestos\\PuestosResponseDto.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAcwFsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T21:51:53.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EPuestos.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dominio\\EPuestos.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Dominio\\EPuestos.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dominio\\EPuestos.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Dominio\\EPuestos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T21:51:19.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPuestosRepositorio.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.IRepositorio\\IPuestosRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTranajo.IRepositorio\\IPuestosRepositorio.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTranajo.IRepositorio\\IPuestosRepositorio.cs",
+              "RelativeToolTip": "..\\DMBolsaTranajo.IRepositorio\\IPuestosRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:21:48.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPuestosAplicacion.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.IAplicacion\\IPuestosAplicacion.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.IAplicacion\\IPuestosAplicacion.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.IAplicacion\\IPuestosAplicacion.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.IAplicacion\\IPuestosAplicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:09:19.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PuestosMap.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Map\\PuestosMap.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Map\\PuestosMap.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Map\\PuestosMap.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Map\\PuestosMap.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T19:43:26.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T19:55:46.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Servicios\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAAwHgAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:29:19.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PuestosRequestDto.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dto\\Puestos\\PuestosRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Dto\\Puestos\\PuestosRequestDto.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dto\\Puestos\\PuestosRequestDto.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Dto\\Puestos\\PuestosRequestDto.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAewBUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:10:40.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DatabaseKeepAliveService.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.ConexionBD\\DatabaseKeepAliveService.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.ConexionBD\\DatabaseKeepAliveService.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.ConexionBD\\DatabaseKeepAliveService.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.ConexionBD\\DatabaseKeepAliveService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T15:39:50.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsuarioRequestDto.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dto\\Usuario\\UsuarioRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\DMBolsaTrabajo.Dto\\Usuario\\UsuarioRequestDto.cs",
+              "ToolTip": "D:\\PROYECTOS\\Bolsa de Trabajo\\Bolsa de Trabajo Servicios\\DMBolsaTrabajo.Dto\\Usuario\\UsuarioRequestDto.cs",
+              "RelativeToolTip": "..\\DMBolsaTrabajo.Dto\\Usuario\\UsuarioRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:12:06.894Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

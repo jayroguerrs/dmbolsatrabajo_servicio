@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMBolsaTrabajo.ConexionBD\DMBolsaTrabajo.ConexionBD.csproj" />
+    <ProjectReference Include="..\DMBolsaTrabajo.Utilitarios\DMBolsaTrabajo.Utilitarios.csproj" />
+    <ProjectReference Include="..\DMBolsaTranajo.IRepositorio\DMBolsaTranajo.IRepositorio.csproj" />
+  </ItemGroup>
+
+</Project>

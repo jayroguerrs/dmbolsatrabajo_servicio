@@ -1,0 +1,11 @@
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\bin\Debug\net8.0\DMBolsaTrabajo.Dto.deps.json
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\bin\Debug\net8.0\DMBolsaTrabajo.Dto.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\bin\Debug\net8.0\DMBolsaTrabajo.Dto.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\DMBolsaTrabajo.Dto.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\DMBolsaTrabajo.Dto.AssemblyInfoInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\DMBolsaTrabajo.Dto.AssemblyInfo.cs
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\DMBolsaTrabajo.Dto.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\DMBolsaTrabajo.Dto.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\refint\DMBolsaTrabajo.Dto.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\DMBolsaTrabajo.Dto.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Debug\net8.0\ref\DMBolsaTrabajo.Dto.dll

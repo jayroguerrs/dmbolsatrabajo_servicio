@@ -1,0 +1,12 @@
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\bin\Release\net8.0\DMBolsaTrabajo.Utilitarios.deps.json
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\bin\Release\net8.0\DMBolsaTrabajo.Utilitarios.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\bin\Release\net8.0\DMBolsaTrabajo.Utilitarios.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.csproj.AssemblyReference.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.AssemblyInfoInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.AssemblyInfo.cs
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\refint\DMBolsaTrabajo.Utilitarios.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\DMBolsaTrabajo.Utilitarios.pdb
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Utilitarios\obj\Release\net8.0\ref\DMBolsaTrabajo.Utilitarios.dll

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ElmahCore" Version="2.1.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMBolsaTrabajo.Aplicacion\DMBolsaTrabajo.Aplicacion.csproj" />
+    <ProjectReference Include="..\DMBolsaTrabajo.ConexionBD\DMBolsaTrabajo.ConexionBD.csproj" />
+    <ProjectReference Include="..\DMBolsaTrabajo.Dto\DMBolsaTrabajo.Dto.csproj" />
+    <ProjectReference Include="..\DMBolsaTrabajo.IAplicacion\DMBolsaTrabajo.IAplicacion.csproj" />
+    <ProjectReference Include="..\DMBolsaTrabajo.Map\DMBolsaTrabajo.Map.csproj" />
+    <ProjectReference Include="..\DMBolsaTrabajo.Utilitarios\DMBolsaTrabajo.Utilitarios.csproj" />
+    <ProjectReference Include="..\DMBolsaTranajo.IRepositorio\DMBolsaTranajo.IRepositorio.csproj" />
+    <ProjectReference Include="..\DMBolsaTranajo.Repositorio\DMBolsaTranajo.Repositorio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Public\Images\" />
+    <Folder Include="Public\Postulaciones\" />
+  </ItemGroup>
+
+</Project>

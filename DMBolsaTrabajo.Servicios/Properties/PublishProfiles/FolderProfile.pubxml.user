@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Servicios\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-04-21T14:38:29.4747454Z||;True|2025-04-14T12:16:04.3141189-05:00||;True|2025-04-11T17:12:09.9250481-05:00||;True|2025-04-10T16:47:18.2401162-05:00||;True|2025-04-10T09:43:53.9829541-05:00||;True|2025-04-09T16:35:12.3385803-05:00||;True|2025-04-09T16:31:20.2468718-05:00||;True|2025-04-09T16:20:11.4347732-05:00||;True|2025-04-09T16:20:03.9272367-05:00||;True|2025-04-09T10:49:07.4371843-05:00||;True|2025-04-09T10:38:18.5927890-05:00||;True|2025-04-09T10:36:16.2187768-05:00||;True|2025-04-09T10:26:47.1682461-05:00||;True|2025-04-08T17:24:34.9218883-05:00||;True|2025-04-08T17:21:24.3075990-05:00||;True|2025-04-08T17:03:38.5786546-05:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
