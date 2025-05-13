@@ -275,7 +275,7 @@ CREATE TABLE `bt_menu` (
 
 LOCK TABLES `bt_menu` WRITE;
 /*!40000 ALTER TABLE `bt_menu` DISABLE KEYS */;
-INSERT INTO `bt_menu` VALUES ('10000001','Usuarios',NULL,4,'/admin/usuarios','heroicons_outline:users',1,'2025-02-26 12:03:08',NULL,NULL,1,1),('11000001','Perfil',NULL,3,'/admin/apps/profile',NULL,1,'2025-02-25 16:15:54',NULL,NULL,1,1),('11000002','Configuraciones',NULL,4,'/admin/apps/settings',NULL,1,'2025-02-25 16:16:25',NULL,NULL,1,1),('12000001','Maestras',NULL,3,NULL,'heroicons_outline:users',1,'2025-02-26 12:03:31',NULL,NULL,1,1),('12000002','Catálogo Detalle','12000001',4,'/admin/maestras/catalogo-detalle','heroicons_outline:rectangle-group',1,'2025-02-26 12:04:12',NULL,NULL,1,1),('20000001','Dashboard',NULL,1,'/admin/dashboard','heroicons_outline:chart-pie',1,'2025-02-25 16:17:58',NULL,NULL,1,1),('30000001','Bolsa de Trabajo',NULL,2,NULL,'heroicons_outline:chart-pie',1,'2025-02-26 16:23:09',NULL,NULL,1,1),('30000002','Convocatorias','30000001',2,'/admin/bolsa/convocatorias','heroicons_outline:chart-pie',1,'2025-02-26 16:26:48',NULL,NULL,1,1),('30000003','Nuevo','30000001',1,'/admin/formulario/nuevo-formulario','heroicons_outline:chart-pie',1,'2025-02-26 16:29:24',NULL,NULL,1,1);
+INSERT INTO `bt_menu` VALUES ('10000001','Usuarios',NULL,4,'/admin/usuarios','heroicons_outline:users',1,'2025-02-26 12:03:08',NULL,NULL,1,1),('11000001','Perfil',NULL,3,'/admin/apps/profile',NULL,1,'2025-02-25 16:15:54',NULL,NULL,1,1),('11000002','Configuraciones',NULL,4,'/admin/apps/settings',NULL,1,'2025-02-25 16:16:25',NULL,NULL,1,1),('12000001','Maestras',NULL,3,NULL,'heroicons_outline:users',1,'2025-02-26 12:03:31',NULL,NULL,1,1),('12000002','Catálogo Detalle','12000001',4,'/admin/maestras/catalogo-detalle','heroicons_outline:rectangle-group',1,'2025-02-26 12:04:12',NULL,NULL,1,1),('20000001','Dashboard',NULL,1,'/admin/dashboard','heroicons_outline:chart-pie',1,'2025-02-25 16:17:58',NULL,NULL,1,1),('30000001','Bolsa de Trabajo',NULL,2,NULL,'heroicons_outline:chart-pie',1,'2025-02-26 16:23:09',NULL,NULL,1,1),('30000002','Convocatorias','30000001',2,'/admin/bolsa/convocatorias','heroicons_outline:chart-pie',1,'2025-02-26 16:26:48',NULL,NULL,1,1),('30000004','Listar Postulantes','30000001',3,'/admin/bolsa/listar-postulantes','heroicons_outline:chart-pie',1,'2025-05-12 17:15:30',NULL,NULL,1,1);
 /*!40000 ALTER TABLE `bt_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -303,7 +303,7 @@ CREATE TABLE `bt_menu_roles` (
   KEY `frm_menu_roles_frm_menu_FK` (`CMENU_ID`),
   CONSTRAINT `frm_menu_roles_frm_menu_FK` FOREIGN KEY (`CMENU_ID`) REFERENCES `bt_menu` (`CMENU_ID`) ON UPDATE CASCADE,
   CONSTRAINT `frm_menu_roles_frm_roles_FK` FOREIGN KEY (`NROLE_ID`) REFERENCES `bt_roles` (`NROLE_ID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -312,7 +312,7 @@ CREATE TABLE `bt_menu_roles` (
 
 LOCK TABLES `bt_menu_roles` WRITE;
 /*!40000 ALTER TABLE `bt_menu_roles` DISABLE KEYS */;
-INSERT INTO `bt_menu_roles` VALUES (1,1,'11000001',0,NULL,1,'2025-02-25 16:19:28',NULL,NULL,1,1),(2,1,'11000002',0,NULL,1,'2025-02-25 16:19:43',NULL,NULL,1,1),(3,1,'20000001',1,NULL,1,'2025-02-25 16:20:10',NULL,NULL,1,1),(4,1,'10000001',1,NULL,1,'2025-02-26 12:05:10',NULL,NULL,1,1),(5,1,'12000001',1,NULL,1,'2025-02-26 12:05:35',NULL,NULL,1,1),(6,1,'12000002',1,NULL,1,'2025-02-26 12:05:52',NULL,NULL,1,1),(7,1,'30000001',1,NULL,1,'2025-02-26 16:23:20',NULL,NULL,1,1),(8,1,'30000002',1,NULL,1,'2025-02-26 16:27:05',NULL,NULL,1,1),(9,1,'30000003',1,NULL,1,'2025-02-26 16:29:32',NULL,NULL,1,1);
+INSERT INTO `bt_menu_roles` VALUES (1,1,'11000001',0,NULL,1,'2025-02-25 16:19:28',NULL,NULL,1,1),(2,1,'11000002',0,NULL,1,'2025-02-25 16:19:43',NULL,NULL,1,1),(3,1,'20000001',1,NULL,1,'2025-02-25 16:20:10',NULL,NULL,1,1),(4,1,'10000001',1,NULL,1,'2025-02-26 12:05:10',NULL,NULL,1,1),(5,1,'12000001',1,NULL,1,'2025-02-26 12:05:35',NULL,NULL,1,1),(6,1,'12000002',1,NULL,1,'2025-02-26 12:05:52',NULL,NULL,1,1),(7,1,'30000001',1,NULL,1,'2025-02-26 16:23:20',NULL,NULL,1,1),(8,1,'30000002',1,NULL,1,'2025-02-26 16:27:05',NULL,NULL,1,1),(10,1,'30000004',0,NULL,1,'2025-05-12 17:15:58',NULL,NULL,1,1);
 /*!40000 ALTER TABLE `bt_menu_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -345,7 +345,7 @@ CREATE TABLE `bt_persona` (
   PRIMARY KEY (`NPERS_ID`),
   KEY `frm_persona_frm_catalogo_detalle_FK` (`NCADE_ID_SEXO`),
   CONSTRAINT `frm_persona_frm_catalogo_detalle_FK` FOREIGN KEY (`NCADE_ID_SEXO`) REFERENCES `bt_catalogo_detalle` (`NCADE_ID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -354,7 +354,7 @@ CREATE TABLE `bt_persona` (
 
 LOCK TABLES `bt_persona` WRITE;
 /*!40000 ALTER TABLE `bt_persona` DISABLE KEYS */;
-INSERT INTO `bt_persona` VALUES (1,'GUERREROS','ECHIA','JAYRO',11000001,'jguerreros@derrama.org.pe',NULL,10000001,'70236552','1994-12-05','993908435','Hola soy Jayro Guerrs',1,'2025-02-25 15:06:51',NULL,NULL,1,1);
+INSERT INTO `bt_persona` VALUES (1,'GUERREROS','ECHIA','JAYRO',11000001,'jguerreros@derrama.org.pe',NULL,10000001,'70236552','1994-12-05','993908435','Hola soy Jayro Guerrs',1,'2025-02-25 15:06:51',1,'2025-05-13 17:20:28',1,1),(2,'FAWEF','FAWEF','FAWEF',NULL,'jayroguerreros@gmail.com',NULL,NULL,NULL,NULL,NULL,NULL,1,'2025-05-13 17:21:02',NULL,NULL,1,1),(3,'VEAA','SERVESR','JAYRO',NULL,'jayroguerrderos@gmail.com',NULL,NULL,NULL,NULL,NULL,NULL,1,'2025-05-13 17:23:35',NULL,NULL,1,1),(4,'WQEQWE','GFDGFD','WAERWAER',NULL,'fawefaw@fawef.com',NULL,NULL,NULL,NULL,NULL,NULL,1,'2025-05-13 17:24:29',NULL,NULL,1,1);
 /*!40000 ALTER TABLE `bt_persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -388,7 +388,7 @@ CREATE TABLE `bt_postulaciones` (
   KEY `bt_postulaciones_bt_puestos_fk` (`NPUEST_ID`),
   CONSTRAINT `bt_postulaciones_bt_puestos_fk` FOREIGN KEY (`NPUEST_ID`) REFERENCES `bt_puestos` (`NPUEST_ID`) ON UPDATE CASCADE,
   CONSTRAINT `bt_postulaciones_bt_usuario_fk` FOREIGN KEY (`NUSUA_ID`) REFERENCES `bt_usuario` (`NUSUA_ID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +397,7 @@ CREATE TABLE `bt_postulaciones` (
 
 LOCK TABLES `bt_postulaciones` WRITE;
 /*!40000 ALTER TABLE `bt_postulaciones` DISABLE KEYS */;
-INSERT INTO `bt_postulaciones` VALUES (9,NULL,10000001,'70236552','JAYRO','GUERREROS','ECHIA','jayroguerreros@gmail.com','993908435',1,'/Postulaciones/1/70236552.pdf',NULL,'2025-04-11 17:05:36',NULL,NULL,1,1),(10,NULL,10000001,'70234936','CARLOS','GUERREROS ','ECHIA','cfguerreros@gmail.com','993824563',1,'/Postulaciones/1/70234936.pdf',NULL,'2025-04-11 17:09:12',NULL,NULL,1,1);
+INSERT INTO `bt_postulaciones` VALUES (9,NULL,10000001,'70236552','JAYRO','GUERREROS','ECHIA','jayroguerreros@gmail.com','993908435',1,'/Postulaciones/1/70236552.pdf',NULL,'2025-04-11 17:05:36',NULL,NULL,1,1),(10,NULL,10000001,'70234936','CARLOS','GUERREROS ','ECHIA','cfguerreros@gmail.com','993824563',1,'/Postulaciones/1/70234936.pdf',NULL,'2025-04-11 17:09:12',NULL,NULL,1,1),(11,NULL,10000001,'70236552','pepito','fawefa','cawefaw','jayroguerreros@gmail.com','993908435',4,'/Postulaciones/4/70236552.pdf',NULL,'2025-05-13 16:39:39',NULL,NULL,1,1);
 /*!40000 ALTER TABLE `bt_postulaciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -456,7 +456,8 @@ CREATE TABLE `bt_puestos` (
   `NPUEST_ID` int NOT NULL AUTO_INCREMENT,
   `CPUEST_TITULO` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `CPUEST_DESCRIPCION` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `DPUEST_FECHA_FIN` date DEFAULT NULL,
+  `DPUEST_FECHA_INI` date NOT NULL,
+  `DPUEST_FECHA_FIN` date NOT NULL,
   `NDIST_ID` int DEFAULT NULL,
   `CPUEST_IMAGEN` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `NAUDI_REG_INS` int NOT NULL,
@@ -466,7 +467,7 @@ CREATE TABLE `bt_puestos` (
   `NPUEST_ESTADO` int NOT NULL DEFAULT '1' COMMENT 'ESTADO REGISTRO (1=ACTIVO, 0=INACTIVO)',
   `NAUDI_EST_REG` int NOT NULL DEFAULT '1' COMMENT 'AUDITORIA: ESTADO REGISTRO (1=ACTIVO, 0=INACTIVO)',
   PRIMARY KEY (`NPUEST_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -475,7 +476,7 @@ CREATE TABLE `bt_puestos` (
 
 LOCK TABLES `bt_puestos` WRITE;
 /*!40000 ALTER TABLE `bt_puestos` DISABLE KEYS */;
-INSERT INTO `bt_puestos` VALUES (1,'JEFE DE TALENTO','SE <strong>NECESITA</strong> UN JEFE DE TALENTO','2025-03-15',1,'images/pages/profile/cover.jpg',1,'2025-03-12 12:09:53',NULL,NULL,1,1);
+INSERT INTO `bt_puestos` VALUES (1,'JEFE DE TALENTOS','SE <strong>NECESITA</strong> UN JEFE DE TALENTO','2024-04-01','2024-04-30',1,'images/pages/profile/cover.jpg',1,'2025-03-12 12:09:53',1,'2025-04-28 16:55:56',1,1),(2,'ESF',NULL,'2025-04-08','2025-04-30',1,NULL,1,'2025-04-28 17:19:03',NULL,NULL,1,1),(3,'QAQS',NULL,'2025-05-07','2025-05-22',1,NULL,1,'2025-05-13 15:12:34',NULL,NULL,1,1),(4,'ASADO','<p>fewfwaefawef</p>','2025-05-28','2025-05-31',1,NULL,1,'2025-05-13 15:14:17',1,'2025-05-13 16:19:46',1,1),(5,'PRUEBITA',NULL,'2025-05-29','2025-05-31',1,NULL,1,'2025-05-13 15:41:48',1,'2025-05-13 15:53:57',1,0),(6,'PRUEBOTA','<p>CAEFWAE</p>','2025-05-20','2025-05-21',1,NULL,1,'2025-05-13 15:42:56',1,'2025-05-13 15:53:29',1,0),(7,'FWAEF','<p>fawef</p>','2025-05-27','2025-05-28',1,NULL,1,'2025-05-13 15:45:55',1,'2025-05-13 15:51:05',1,0);
 /*!40000 ALTER TABLE `bt_puestos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -601,7 +602,7 @@ CREATE TABLE `bt_usuario` (
   `NUSUA_ESTADO` int NOT NULL DEFAULT '1' COMMENT 'ESTADO REGISTRO (1=ACTIVO, 0=INACTIVO)',
   `NAUDI_EST_REG` int NOT NULL DEFAULT '1' COMMENT 'AUDITORIA: ESTADO REGISTRO (1=ACTIVO, 0=INACTIVO)',
   PRIMARY KEY (`NUSUA_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='TABLA DE USUARIOS';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='TABLA DE USUARIOS';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -610,7 +611,7 @@ CREATE TABLE `bt_usuario` (
 
 LOCK TABLES `bt_usuario` WRITE;
 /*!40000 ALTER TABLE `bt_usuario` DISABLE KEYS */;
-INSERT INTO `bt_usuario` VALUES (1,1,'jguerreros','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918','40c6bde3-fa01-11ef-8f27-04d9c869e560','2025-03-06 15:34:36',1,'2025-02-25 15:07:20',1,'2025-03-05 15:34:36',1,1);
+INSERT INTO `bt_usuario` VALUES (1,1,'jguerreros','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918','79bd5a32-3048-11f0-8297-04d9c869e560','2025-05-14 17:20:28',1,'2025-02-25 15:07:20',1,'2025-05-13 17:20:28',1,1),(2,2,'15084',NULL,'8dd6acc5-3048-11f0-8297-04d9c869e560','2025-05-14 17:21:02',1,'2025-05-13 17:21:02',NULL,NULL,1,1),(3,3,'15142',NULL,'e963be38-3048-11f0-8297-04d9c869e560','2025-05-14 17:23:35',1,'2025-05-13 17:23:35',NULL,NULL,1,1),(4,4,'45236',NULL,'092ab1fa-3049-11f0-8297-04d9c869e560','2025-05-14 17:24:29',1,'2025-05-13 17:24:29',NULL,NULL,1,1);
 /*!40000 ALTER TABLE `bt_usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -639,7 +640,7 @@ CREATE TABLE `bt_usuario_asig_roles` (
   KEY `frm_usuario_asig_roles_frm_roles_FK` (`NROLE_ID`),
   CONSTRAINT `frm_usuario_asig_roles_frm_roles_FK` FOREIGN KEY (`NROLE_ID`) REFERENCES `bt_roles` (`NROLE_ID`) ON UPDATE CASCADE,
   CONSTRAINT `frm_usuario_asig_roles_frm_usuario_FK` FOREIGN KEY (`NUSUA_ID`) REFERENCES `bt_usuario` (`NUSUA_ID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -648,7 +649,7 @@ CREATE TABLE `bt_usuario_asig_roles` (
 
 LOCK TABLES `bt_usuario_asig_roles` WRITE;
 /*!40000 ALTER TABLE `bt_usuario_asig_roles` DISABLE KEYS */;
-INSERT INTO `bt_usuario_asig_roles` VALUES (1,1,1,1,NULL,NULL,1,'2025-02-25 15:12:31',NULL,NULL,1,1);
+INSERT INTO `bt_usuario_asig_roles` VALUES (1,1,1,1,NULL,NULL,1,'2025-02-25 15:12:31',1,'2025-05-13 17:20:28',1,1),(2,2,1,0,NULL,NULL,1,'2025-05-13 17:21:02',1,'2025-05-13 17:25:46',1,0),(6,3,1,0,NULL,NULL,1,'2025-05-13 17:23:35',1,'2025-05-13 17:25:45',1,0),(10,4,1,0,NULL,NULL,1,'2025-05-13 17:24:29',1,'2025-05-13 17:25:42',1,0);
 /*!40000 ALTER TABLE `bt_usuario_asig_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -982,6 +983,35 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_DEPARTAMENTO_LISTAR_CMB` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_DEPARTAMENTO_LISTAR_CMB`(
+	IN P_NDEPA_ESTADO INT
+)
+BEGIN
+	
+	SELECT
+		NDEPA_ID,
+		CDEPA_NOMBRE
+	FROM dmbolsa.bt_departamento bd
+	WHERE 
+		(IFNULL(P_NDEPA_ESTADO, -1) = -1 OR BD.NDEPA_ESTADO = P_NDEPA_ESTADO)
+		AND NAUDI_EST_REG = 1;
+	
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP PROCEDURE IF EXISTS `SP_DISTRITO_LISTAR_CMB` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -993,16 +1023,20 @@ DELIMITER ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_DISTRITO_LISTAR_CMB`(
+	IN P_NDEPA_ID INT,
 	IN P_NDIST_ESTADO INT
 )
 BEGIN
+	DECLARE V_NDEPA_ID INT;
+
+	SET V_NDEPA_ID = IFNULL(P_NDEPA_ID, 0);
 	
 	SELECT
 		NDIST_ID,
 		CDIST_NOMBRE
 	FROM dmbolsa.bt_distrito bd
-	WHERE 
-		(IFNULL(P_NDIST_ESTADO, -1) = -1 OR BD.NDIST_ESTADO = P_NDIST_ESTADO)
+	WHERE BD.NDEPA_ID = V_NDEPA_ID
+		AND (IFNULL(P_NDIST_ESTADO, -1) = -1 OR BD.NDIST_ESTADO = P_NDIST_ESTADO)
 		AND NAUDI_EST_REG = 1;
 
 END ;;
@@ -1247,6 +1281,186 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_PUESTOS_CAMBIAR_ESTADO` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_PUESTOS_CAMBIAR_ESTADO`(
+	IN P_NPUEST_ID INT,
+	IN P_NAUDI_USR_UPD INT
+)
+BEGIN
+	DECLARE V_ESTADO INT DEFAULT 0;
+	DECLARE V_MENSAJE VARCHAR(1000) DEFAULT 'Ha sucedio un error en el registro';
+    DECLARE V_RESULTADO INT DEFAULT 0;
+	
+	SELECT NPUEST_ESTADO INTO V_ESTADO 
+	FROM dmbolsa.bt_puestos
+	WHERE NPUEST_ID = P_NPUEST_ID;
+	
+	UPDATE dmbolsa.bt_puestos
+	SET NPUEST_ESTADO = IF(V_ESTADO = 0, 1, 0),
+		NAUDI_REG_UPD = P_NAUDI_USR_UPD,
+		DAUDI_REG_UPD = NOW()
+	WHERE NPUEST_ID = P_NPUEST_ID;
+	
+	IF ROW_COUNT() > 0 THEN
+		SET V_RESULTADO = P_NPUEST_ID;
+		SET V_MENSAJE = "Se ha actualido el estado exitosamente";
+	ELSE
+		SET V_RESULTADO = 0;
+		SET V_MENSAJE = "No se ha podido actualizar el estado";
+	END IF;
+	
+	COMMIT;
+	SELECT V_RESULTADO NSUCCESS, V_MENSAJE CMESSAGE;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_PUESTOS_ELIMINAR` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_PUESTOS_ELIMINAR`(
+	IN P_NPUEST_ID INT,
+	IN P_NAUDI_USR_UPD INT
+)
+BEGIN
+
+	IF P_NPUEST_ID > 0 THEN 
+      
+      	UPDATE dmbolsa.bt_puestos 
+      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = NOW()
+      	WHERE NPUEST_ID = P_NPUEST_ID;
+      
+      	-- Verificar si se actualizó algún registro
+		IF ROW_COUNT() > 0 THEN
+			SELECT 
+				1 AS NSUCCESS, 
+				'Se ha eliminado el registro' AS CMESSAGE;
+		ELSE
+			SELECT 
+				0 AS NSUCCESS, 
+				'No se ha podido eliminar el registro' AS CMESSAGE;
+		END IF;
+      
+	ELSE 
+		
+		SELECT 
+			2 NSUCCESS,
+			'No existe un regitro para el ID';
+	
+	END IF;	
+	
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_PUESTOS_INS_UPD` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_PUESTOS_INS_UPD`(
+	IN P_NPUEST_ID INT,
+	IN P_CPUEST_TITULO VARCHAR(150),
+	IN P_CPUEST_DESCRIPCION TEXT,
+	IN P_DPUEST_FECHA_INI DATE,
+	IN P_DPUEST_FECHA_FIN DATE,
+	IN P_NDIST_ID INT,
+	IN P_NPUEST_ESTADO INT,
+	IN P_NAUDI_USR_INS INT
+)
+BEGIN
+	
+	DECLARE V_NPUEST_ID INT;
+	DECLARE V_EXISTE_TITULO VARCHAR(150);
+	DECLARE V_EXISTE_ID INT;
+	DECLARE V_MENSAJE VARCHAR(1000) DEFAULT 'Ha sucedio un error en el registro';
+    DECLARE V_RESULTADO INT DEFAULT 0;
+	
+	SET V_NPUEST_ID = IFNULL(P_NPUEST_ID, 0);
+	
+	SELECT NPUEST_ID, CPUEST_TITULO INTO V_EXISTE_ID, V_EXISTE_TITULO
+    FROM dmbolsa.bt_puestos
+    WHERE UPPER(CPUEST_TITULO) = UPPER(P_CPUEST_TITULO)
+    AND (V_NPUEST_ID = 0 OR NPUEST_ID != V_NPUEST_ID)
+	LIMIT 1;
+	
+	IF V_EXISTE_ID IS NOT NULL THEN 
+		SET V_MENSAJE = CONCAT('Ya existe una convocatoria con el título "', V_EXISTE_TITULO, '"');
+        SET V_RESULTADO = 0;
+	ELSE
+		IF V_NPUEST_ID > 0 THEN
+			-- ACTUALIZA
+			UPDATE dmbolsa.BT_PUESTOS 
+			SET CPUEST_TITULO = UPPER(P_CPUEST_TITULO),
+				CPUEST_DESCRIPCION = P_CPUEST_DESCRIPCION,
+				DPUEST_FECHA_INI = P_DPUEST_FECHA_INI,
+				DPUEST_FECHA_FIN = P_DPUEST_FECHA_FIN,
+				NDIST_ID = P_NDIST_ID,
+				NPUEST_ESTADO = P_NPUEST_ESTADO,
+				NAUDI_REG_UPD = P_NAUDI_USR_INS,
+				DAUDI_REG_UPD = NOW()
+			WHERE NPUEST_ID = P_NPUEST_ID;
+		
+			SET V_RESULTADO = V_NPUEST_ID;
+			SET V_MENSAJE = "Se ha actualizado el registro exitosamente";
+		ELSE
+			-- INSERTAR
+			INSERT INTO dmbolsa.BT_PUESTOS (
+				CPUEST_TITULO,
+				CPUEST_DESCRIPCION,
+				DPUEST_FECHA_INI,
+				DPUEST_FECHA_FIN,
+				NDIST_ID,
+				NAUDI_REG_INS
+			) 
+			VALUES (
+				UPPER(P_CPUEST_TITULO),
+				P_CPUEST_DESCRIPCION,
+				P_DPUEST_FECHA_INI,
+				P_DPUEST_FECHA_FIN,
+				P_NDIST_ID,
+				P_NAUDI_USR_INS
+			);
+			
+			SET V_RESULTADO = LAST_INSERT_ID();
+			SET V_MENSAJE = "Se ha insertado el registro exitosamente";
+		END IF;
+	END IF;
+			
+	COMMIT;
+	SELECT V_MENSAJE CMESSAGE, V_RESULTADO NSUCCESS;
+	
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP PROCEDURE IF EXISTS `SP_PUESTOS_LISTAR_PAGINADO` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -1290,6 +1504,8 @@ BEGIN
         SET V_QUERY_ORDEN = 'CONCAT(BD.CDIST_NOMBRE, ", ", BD2.CDEPA_NOMBRE)';
     ELSEIF V_ORDER_BY = 'fechafin' THEN
         SET V_QUERY_ORDEN = 'BP.DPUEST_FECHA_FIN';
+ 	ELSEIF V_ORDER_BY = 'fechainicio' THEN
+        SET V_QUERY_ORDEN = 'BP.DPUEST_FECHA_INI';
     ELSEIF V_ORDER_BY = 'fechaCreacion' THEN
         SET V_QUERY_ORDEN = 'IFNULL(BP.DAUDI_REG_UPD, BP.DAUDI_REG_INS)';
     ELSEIF V_ORDER_BY = 'responsable' THEN
@@ -1312,7 +1528,8 @@ BEGIN
 		BP.CPUEST_TITULO LIKE CONCAT('%', UPPER(TRIM(IFNULL(P_CPUEST_TITULO, ''))), '%')
 		AND CONCAT(BD.CDIST_NOMBRE, ', ', BD2.CDEPA_NOMBRE) LIKE '%%' 
 		AND (IFNULL(P_NPUEST_ESTADO, -1) = -1 OR BP.NPUEST_ESTADO = P_NPUEST_ESTADO)
-    	AND (IFNULL(P_DAUDI_USR_INS, -1) = -1 OR IFNULL(DATE(BP.DAUDI_REG_UPD), DATE(BP.DAUDI_REG_INS)) = P_DAUDI_USR_INS);
+    	AND (IFNULL(P_DAUDI_USR_INS, -1) = -1 OR IFNULL(DATE(BP.DAUDI_REG_UPD), DATE(BP.DAUDI_REG_INS)) = P_DAUDI_USR_INS)
+    	AND bd.NAUDI_EST_REG = 1;
 
     SET V_CURRENTPAGE = P_PAGE_NUMBER;
     SET V_PAGECOUNT = CEIL(V_RECORDCOUNT / P_PAGE_SIZE);
@@ -1329,8 +1546,10 @@ BEGIN
 		BP.NPUEST_ID,
 		BP.CPUEST_TITULO,
 		BP.CPUEST_DESCRIPCION,
+		BP.DPUEST_FECHA_INI,
 		BP.DPUEST_FECHA_FIN,
 		CONCAT(BD.CDIST_NOMBRE, ', ', BD2.CDEPA_NOMBRE) UBICACION,
+		BP.NPUEST_ESTADO,
 		IFNULL(BD.DAUDI_REG_UPD, BD.DAUDI_REG_INS) AS FECHA_MODIFICACION,
         CONCAT(Y.NUSUA_ID, ' - ', X.CPERS_APE_PATERNO, ' ', X.CPERS_APE_MATERNO, ', ', X.CPERS_NOMBRES) AS USUARIO_RESPONSABLE,
         Z.CCADE_NOMBRE ESTADO_TEXTO
@@ -1344,6 +1563,7 @@ BEGIN
 		CONCAT(BD.CDIST_NOMBRE, ', ', BD2.CDEPA_NOMBRE) LIKE '%%' AND BP.CPUEST_TITULO LIKE CONCAT('%', UPPER(TRIM(IFNULL(P_CPUEST_TITULO, ''))), '%')
 		AND (IFNULL(P_NPUEST_ESTADO, -1) = -1 OR BP.NPUEST_ESTADO = P_NPUEST_ESTADO)
 		AND (IFNULL(P_DAUDI_USR_INS, -1) = -1 OR IFNULL(DATE(BP.DAUDI_REG_UPD), DATE(BP.DAUDI_REG_INS)) = P_DAUDI_USR_INS)
+		AND BP.NAUDI_EST_REG = 1 
 	ORDER BY 
         CASE WHEN V_ORDER = 'ASC' THEN
             CASE V_QUERY_ORDEN
@@ -1388,10 +1608,14 @@ BEGIN
   		FP.NPUEST_ID,
   		FP.CPUEST_TITULO,
   		FP.CPUEST_DESCRIPCION,
+  		FP.DPUEST_FECHA_INI,
   		FP.DPUEST_FECHA_FIN,
   		BD.CDIST_NOMBRE,
   		BD2.CDEPA_NOMBRE,
-  		FP.CPUEST_IMAGEN 
+  		BD.NDIST_ID,
+  		BD2.NDEPA_ID,
+  		FP.CPUEST_IMAGEN,
+  		FP.NPUEST_ESTADO
   	FROM dmbolsa.bt_puestos FP 
   	INNER JOIN dmbolsa.bt_distrito BD ON BD.NDIST_ID = FP.NDIST_ID AND BD.NDIST_ESTADO = 1 AND BD.NAUDI_EST_REG = 1
   	INNER JOIN dmbolsa.bt_departamento BD2 ON BD2.NDEPA_ID = BD.NDEPA_ID AND BD2.NDEPA_ESTADO = 1 AND BD2.NAUDI_EST_REG = 1
@@ -1399,6 +1623,122 @@ BEGIN
       	FP.NPUEST_ID = P_NPUEST_ID
       	AND FP.NAUDI_EST_REG = 1 AND FP.NPUEST_ESTADO = 1;	
 	
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_PUESTOS_POSTULANTES_LISTAR_PAGINADO` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_PUESTOS_POSTULANTES_LISTAR_PAGINADO`(
+	IN P_CPOST_NUMDOC VARCHAR(255),
+    IN P_NOMBRES VARCHAR(255),
+    IN P_NPUEST_ID INT,
+    IN P_NUARO_ESTADO INT,
+    IN P_PAGE_SIZE INT,
+    IN P_PAGE_NUMBER INT,
+    IN P_ORDER_BY VARCHAR(100),
+    IN P_ORDER VARCHAR(100)
+)
+BEGIN
+	DECLARE V_CURRENTPAGE INT;
+    DECLARE V_RECORDCOUNT INT;
+    DECLARE V_PAGECOUNT INT;
+    DECLARE V_PAGEINDEX INT;
+    DECLARE V_ORDER_BY VARCHAR(100);
+    DECLARE V_ORDER VARCHAR(100);
+    DECLARE V_QUERY_ORDEN VARCHAR(500);
+    DECLARE V_OFFSET INT;
+   
+    SET V_ORDER_BY = IFNULL(P_ORDER_BY, '');
+   	SET V_ORDER = IFNULL(P_ORDER, '');
+    
+    IF (V_ORDER_BY = '' OR V_ORDER_BY IS NULL) AND IFNULL(P_NUARO_ESTADO, 0) <> 2 THEN
+        SET V_QUERY_ORDEN = 'BP.DAUDI_USR_INS';
+        SET V_ORDER = 'DESC';
+    ELSEIF (V_ORDER_BY = '' OR V_ORDER_BY IS NULL) AND IFNULL(P_NUARO_ESTADO, 0) = 2 THEN
+        SET V_ORDER = 'DESC';
+        SET V_QUERY_ORDEN = 'IFNULL(FF.DAUDI_USR_UPD, FF.DAUDI_USR_INS)';
+    ELSEIF V_ORDER_BY = 'nombre' THEN
+        SET V_QUERY_ORDEN = 'CONCAT(bp.CPOST_NOMBRES, " ", bp.CPOST_PATERNO, " ", bp.CPOST_MATERNO)';
+    ELSEIF V_ORDER_BY = 'numdoc' THEN
+        SET V_QUERY_ORDEN = 'IFNULL(bp.CPOST_NUMDOC, "")';
+    ELSEIF V_ORDER_BY = 'fechaCreacion' THEN
+        SET V_QUERY_ORDEN = 'IFNULL(BP.DAUDI_REG_UPD, BP.DAUDI_REG_INS)';
+    ELSEIF V_ORDER_BY = 'responsable' THEN
+        SET V_QUERY_ORDEN = 'CONCAT(Y.NUSUA_ID, " - ", X.CPERS_APE_PATERNO, " ", X.CPERS_APE_MATERNO, ", ", X.CPERS_NOMBRES)';
+    ELSEIF V_ORDER_BY = 'usuarioCreacion' THEN
+        SET V_QUERY_ORDEN = 'BP.NAUDI_REG_INS';
+    ELSEIF V_ORDER_BY = 'estado' THEN
+        SET V_QUERY_ORDEN = 'Z.CCADE_NOMBRE';
+    ELSE
+        SET V_QUERY_ORDEN = 'IFNULL(FF.DAUDI_REG_UPD, FF.DAUDI_REG_INS)';
+    END IF;
+
+    SELECT 
+		COUNT(*)
+	INTO V_RECORDCOUNT
+	FROM dmbolsa.bt_postulaciones bp
+	WHERE bp.NPUEST_ID = P_NPUEST_ID 
+		AND CONCAT(bp.CPOST_NOMBRES, " ", bp.CPOST_PATERNO, " ", bp.CPOST_MATERNO) LIKE CONCAT('%', UPPER(TRIM(IFNULL(P_NOMBRES, ''))), '%')
+		AND (IFNULL(bp.CPOST_NUMDOC, "") = "" OR bp.CPOST_NUMDOC = CPOST_NUMDOC)
+		AND (IFNULL(P_NUARO_ESTADO, -1) = -1 OR BP.NUARO_ESTADO = P_NUARO_ESTADO);
+
+    SET V_CURRENTPAGE = P_PAGE_NUMBER;
+    SET V_PAGECOUNT = CEIL(V_RECORDCOUNT / P_PAGE_SIZE);
+
+    IF (V_CURRENTPAGE > V_PAGECOUNT) THEN
+        SET V_CURRENTPAGE = V_PAGECOUNT;
+    END IF;
+
+    SET V_PAGEINDEX = V_CURRENTPAGE - 1;
+    SET V_OFFSET = V_PAGEINDEX * P_PAGE_SIZE;
+    
+    SELECT 
+		BP.NPOST_ID,
+		BP.CPOST_NUMDOC,
+		CONCAT(bp.CPOST_NOMBRES, ' ', bp.CPOST_PATERNO, ' ', bp.CPOST_MATERNO) NOMBRES,
+		BP.CPOST_CORREO,
+		BP.CPOST_ARCHIVO,
+		IFNULL(BP.DAUDI_REG_UPD, BP.DAUDI_REG_INS) AS FECHA_MODIFICACION,
+        CONCAT(Y.NUSUA_ID, ' - ', X.CPERS_APE_PATERNO, ' ', X.CPERS_APE_MATERNO, ', ', X.CPERS_NOMBRES) AS USUARIO_RESPONSABLE,
+        Z.CCADE_NOMBRE ESTADO_TEXTO
+	FROM dmbolsa.bt_postulaciones bp
+	LEFT JOIN dmbolsa.BT_CATALOGO_DETALLE Z ON Z.NCATA_ID = 12 AND Z.CCADE_CODIGO = BP.NUARO_ESTADO
+    LEFT JOIN dmbolsa.BT_USUARIO Y ON Y.NUSUA_ID = IFNULL(BP.NAUDI_REG_UPD, BP.NAUDI_REG_INS) AND Y.NUSUA_ESTADO = 1 AND Y.NAUDI_EST_REG = 1
+    LEFT JOIN dmbolsa.BT_PERSONA X ON X.NPERS_ID = Y.NPERS_ID AND X.NPERS_ESTADO = 1 AND X.NAUDI_EST_REG = 1
+	WHERE bp.NPUEST_ID = P_NPUEST_ID 
+		AND CONCAT(bp.CPOST_NOMBRES, ' ', bp.CPOST_MATERNO, ' ', bp.CPOST_MATERNO) LIKE CONCAT('%', UPPER(TRIM(IFNULL(P_NOMBRES, ''))), '%')
+		AND (IFNULL(bp.CPOST_NUMDOC, '') = '' OR bp.CPOST_NUMDOC = CPOST_NUMDOC)
+		AND (IFNULL(P_NUARO_ESTADO, -1) = -1 OR BP.NUARO_ESTADO = P_NUARO_ESTADO)
+	ORDER BY 
+        CASE WHEN V_ORDER = 'ASC' THEN
+            CASE V_QUERY_ORDEN
+                WHEN 'CONCAT(bp.CPOST_NOMBRES, ' ', bp.CPOST_MATERNO, ' ', bp.CPOST_MATERNO)' THEN CONCAT(bp.CPOST_NOMBRES, ' ', bp.CPOST_MATERNO, ' ', bp.CPOST_MATERNO) 
+                ELSE IFNULL(BP.DAUDI_REG_UPD, BP.DAUDI_REG_INS)
+            END
+        END ASC,
+        CASE WHEN V_ORDER = 'DESC' THEN
+            CASE V_QUERY_ORDEN
+                WHEN 'CONCAT(bp.CPOST_NOMBRES, ' ', bp.CPOST_MATERNO, ' ', bp.CPOST_MATERNO)' THEN CONCAT(bp.CPOST_NOMBRES, ' ', bp.CPOST_MATERNO, ' ', bp.CPOST_MATERNO)
+                ELSE IFNULL(BP.DAUDI_REG_UPD, BP.DAUDI_REG_INS)
+            END
+        END DESC 
+    LIMIT P_PAGE_SIZE OFFSET V_OFFSET;
+
+    SELECT V_RECORDCOUNT AS RECORDCOUNT,
+           V_PAGECOUNT AS PAGECOUNT,
+           V_CURRENTPAGE AS CURRENTPAGE;
+    
 END ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1429,7 +1769,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_PUESTOS_POSTULAR`(
 	IN P_CPOST_ARCHIVO VARCHAR(100)
 )
 BEGIN
-	
+	DECLARE V_EXISTE_CORREO INT DEFAULT 0;
+	DECLARE V_EXISTE_DOCUMENTO INT DEFAULT 0;
+	DECLARE V_MENSAJE VARCHAR(1000) DEFAULT 'Ha sucedio un error en el registro';
+    DECLARE V_RESULTADO INT DEFAULT 0;
+
 	-- VALIDACIONES
 	IF P_NUSUA_ID = '' THEN 
 		SET P_NUSUA_ID = NULL;
@@ -1448,44 +1792,57 @@ BEGIN
 			CPOST_CORREO = P_CPOST_CORREO,
 			CPOST_CELULAR = P_CPOST_CELULAR
 		WHERE NPOST_ID = P_NPOST_ID;
+	
+		SET V_RESULTADO = P_NPOST_ID;
+		SET V_MENSAJE = 'Actualización exitosa';
 	ELSE
 		-- INSERTAR
-		INSERT INTO 
-			dmbolsa.bt_postulaciones (
-				NUSUA_ID,
-				NCADE_TIPO_DOCUMENTO,
-				CPOST_NUMDOC,
-				CPOST_NOMBRES, 
-				CPOST_PATERNO, 
-				CPOST_MATERNO, 
-				NPUEST_ID,
-				CPOST_ARCHIVO,
-				CPOST_CORREO,
-				CPOST_CELULAR
-			)
-		VALUES (
-			P_NUSUA_ID,
-			P_NCADE_TIPO_DOCUMENTO,
-			P_CPOST_NUMDOC,
-			P_CPOST_NOMBRES, 
-			P_CPOST_PATERNO, 
-			P_CPOST_MATERNO, 
-			P_NPUEST_ID,
-			P_CPOST_ARCHIVO,
-			P_CPOST_CORREO,
-			P_CPOST_CELULAR
-		);
+		SELECT COUNT(*) INTO V_EXISTE_CORREO FROM dmbolsa.bt_postulaciones bp 
+		WHERE CPOST_CORREO = P_CPOST_CORREO AND NAUDI_EST_REG = 1;
+		
+		SELECT COUNT(*) INTO V_EXISTE_DOCUMENTO FROM dmbolsa.bt_postulaciones bp 
+		WHERE CPOST_NUMDOC = P_CPOST_NUMDOC AND NAUDI_EST_REG = 1;
+	
+		IF V_EXISTE_CORREO = 0 THEN 
+			IF V_EXISTE_DOCUMENTO = 0 THEN
+				INSERT INTO 
+					dmbolsa.bt_postulaciones (
+						NUSUA_ID,
+						NCADE_TIPO_DOCUMENTO,
+						CPOST_NUMDOC,
+						CPOST_NOMBRES, 
+						CPOST_PATERNO, 
+						CPOST_MATERNO, 
+						NPUEST_ID,
+						CPOST_ARCHIVO,
+						CPOST_CORREO,
+						CPOST_CELULAR
+					)
+				VALUES (
+					P_NUSUA_ID,
+					P_NCADE_TIPO_DOCUMENTO,
+					P_CPOST_NUMDOC,
+					P_CPOST_NOMBRES, 
+					P_CPOST_PATERNO, 
+					P_CPOST_MATERNO, 
+					P_NPUEST_ID,
+					P_CPOST_ARCHIVO,
+					P_CPOST_CORREO,
+					P_CPOST_CELULAR
+				);
+				SET V_RESULTADO = LAST_INSERT_ID();
+				SET V_MENSAJE = 'Registro exitoso';
+			ELSE
+				SET V_RESULTADO = 0;
+				SET V_MENSAJE = 'El número de documento ya se encuentra registrado';			
+			END IF;
+		ELSE
+			SET V_RESULTADO = 0;
+			SET V_MENSAJE = 'El correo ya se encuentra registrado';
+		END IF;
 	END IF;
 	
-	IF ROW_COUNT() > 0 THEN
-		SELECT 
-       		1 AS NSUCCESS, 
-       		'ACTUALIZACIÓN EXITOSA' AS CMESSAGE;
-	ELSE
-		 SELECT 
-       		0 AS NSUCCESS, 
-       		'NO SE ENCONTRÓ NINGÚN REGISTRO PARA ACTUALIZAR' AS CMESSAGE;
-	END IF;
+	SELECT V_RESULTADO AS NSUCCESS, V_MENSAJE AS CMESSAGE;
 	
 END ;;
 DELIMITER ;
@@ -1765,6 +2122,41 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_USUARIO_ASIG_ROLES_OBTENER_DATOS_POR_ROL` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_USUARIO_ASIG_ROLES_OBTENER_DATOS_POR_ROL`(
+	IN P_NUARO_ID INT
+)
+BEGIN
+	
+	SELECT 
+        fuar.NUARO_ID,
+        fp.CPERS_APE_PATERNO, 
+        fp.CPERS_APE_MATERNO,
+        fp.CPERS_NOMBRES,
+        fp.CPERS_CORREO ,
+        fuar.NUARO_ESTADO,
+        fu.CUSUA_USERNAME,
+        fuar.NROLE_ID
+      FROM dmbolsa.BT_USUARIO_ASIG_ROLES fuar
+      INNER JOIN dmbolsa.BT_USUARIO fu ON fuar.NUSUA_ID = fu.NUSUA_ID AND fu.NUSUA_ESTADO = 1 AND fu.NAUDI_EST_REG = 1
+      INNER JOIN dmbolsa.BT_PERSONA fp ON fu.NPERS_ID = fp.NPERS_ID AND fp.NPERS_ESTADO = 1 AND fp.NAUDI_EST_REG = 1
+      WHERE FUAR.NUARO_ID = P_NUARO_ID
+        AND fuar.NAUDI_EST_REG = 1;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP PROCEDURE IF EXISTS `SP_USUARIO_CARGA_INICIAL` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -1919,22 +2311,24 @@ BEGIN
 
 	IF P_NUARO_ID > 0 THEN 
 
-		SELECT NUSUA_ID INTO V_NUSUA_ID FROM FACT_USUARIO_ASIG_ROLES WHERE NUARO_ID = P_NUARO_ID;
-		SELECT NPERS_ID INTO V_NPERS_ID FROM FACT_USUARIO WHERE NUSUA_ID = V_NUSUA_ID;
+		SELECT NUSUA_ID INTO V_NUSUA_ID FROM dmbolsa.BT_USUARIO_ASIG_ROLES WHERE NUARO_ID = P_NUARO_ID;
+		SELECT NPERS_ID INTO V_NPERS_ID FROM dmbolsa.BT_USUARIO WHERE NUSUA_ID = V_NUSUA_ID;
       
-      	UPDATE dmforms.FRM_USUARIO_ASIG_ROLES 
-      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = SYSDATE
+      	UPDATE dmbolsa.BT_USUARIO_ASIG_ROLES 
+      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = NOW()
       	WHERE NUARO_ID = P_NUARO_ID;
-
+		
+      	/*
       	UPDATE dmforms.FRM_USUARIO
-      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = SYSDATE
+      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = NOW()
       	WHERE NUSUA_ID = V_NUSUA_ID;
 
       	UPDATE dmforms.FRM_PERSONA
-      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = SYSDATE
+      	SET NAUDI_EST_REG = 0, NAUDI_REG_UPD = P_NAUDI_USR_UPD, DAUDI_REG_UPD = NOW()
       	WHERE NPERS_ID = V_NPERS_ID;
+      	*/
       
-      	
+      	-- Verificar si se actualizó algún registro
 		IF ROW_COUNT() > 0 THEN
 			SELECT 
 				1 AS NSUCCESS, 
@@ -1953,6 +2347,263 @@ BEGIN
 	
 	END IF;	
 	
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_USUARIO_ENVIAR_RESTABLECIMIENTO` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_USUARIO_ENVIAR_RESTABLECIMIENTO`(
+	IN P_CPERS_EMAIL VARCHAR(150),
+	IN P_URL VARCHAR(150) 
+)
+BEGIN
+	
+	DECLARE V_NUSUA_ID INT DEFAULT 0;
+    DECLARE V_CPERS_NOMBRES VARCHAR(400);
+    DECLARE V_CPERS_EMAIL VARCHAR(400);
+    DECLARE V_LINK VARCHAR(400);
+    DECLARE V_TOKEN VARCHAR(160);
+    DECLARE V_CONTENIDO_HTML TEXT;
+    
+    -- Variables para el cursor de salida simulado
+    DECLARE ASUNTO VARCHAR(255);
+    DECLARE EMAIL_DESTINO VARCHAR(400);
+    DECLARE NOMBRE_DESTINO VARCHAR(400);
+    DECLARE CONTENIDO_TEXTO TEXT;
+    DECLARE CONTENIDO_HTML TEXT;
+    DECLARE ESTADO INT DEFAULT 1;
+
+    -- Control de errores
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION 
+    BEGIN
+        SELECT '' AS ASUNTO, '' AS EMAIL_DESTINO, '' AS NOMBRE_DESTINO, '' AS CONTENIDO_TEXTO, '' AS CONTENIDO_HTML, 0 AS ESTADO;
+    END;
+
+    -- Generar token aleatorio
+    SET V_TOKEN = UPPER(SUBSTRING(MD5(RAND()), 1, 32));
+
+    -- Obtener datos del usuario
+    SELECT 
+        U.NUSUA_ID,
+        CONCAT(RP.CPERS_NOMBRES, ' ', RP.CPERS_APE_PATERNO, ' ', RP.CPERS_APE_MATERNO),
+        SUBSTRING_INDEX(RP.CPERS_CORREO, '|', 1)
+    INTO 
+        V_NUSUA_ID,
+        V_CPERS_NOMBRES,
+        V_CPERS_EMAIL
+    FROM dmbolsa.bt_USUARIO U
+    INNER JOIN dmbolsa.bt_PERSONA RP ON U.NPERS_ID = RP.NPERS_ID
+    WHERE RP.CPERS_CORREO = P_CPERS_EMAIL
+      AND U.NAUDI_EST_REG = 1
+    LIMIT 1;
+
+    IF V_NUSUA_ID = 0 OR V_NUSUA_ID IS NULL THEN
+        SELECT '' AS ASUNTO, '' AS EMAIL_DESTINO, '' AS NOMBRE_DESTINO, '' AS CONTENIDO_TEXTO, '' AS CONTENIDO_HTML, 0 AS ESTADO;
+    ELSE
+    	
+    	-- Actualizar token
+	    UPDATE dmbolsa.BT_USUARIO 
+	    SET CUSUA_TOKEN = V_TOKEN, DUSUA_TOKEN_VENC = NOW() + INTERVAL 1 DAY
+	    WHERE NUSUA_ID = V_NUSUA_ID;
+	
+	    -- Armar el link
+	    SELECT CONCAT(P_URL, '/admin/reset-password?token=', CUSUA_TOKEN, '&id=', NUSUA_ID)
+	    INTO V_LINK
+	    FROM dmbolsa.BT_USUARIO 
+	    WHERE NUSUA_ID = V_NUSUA_ID;
+	
+	    -- Contenido del correo (simplificado)
+	    SET V_CONTENIDO_HTML = CONCAT(
+	        '<p><table border="0" width="100%" cellspacing="0" cellpadding="30" bgcolor="#f7f7f7">',
+	        '<tr><td><img src="https://www.derrama.org.pe/wp-content/themes/derrama//img/logo-derrama-magisterial-loader.svg" width="220" height="auto" /></td>',
+	        '<td align="right">Derrama Magisterial</td></tr>',
+	        '<tr><td colspan="2">',
+	        '<p style="font-size: 13pt; font-family: Calibri,sans-serif;">Estimado(a) Sr(a): <strong>', V_CPERS_NOMBRES, '</strong></p>',
+	        '<p style="text-align: justify; font-size: 11pt;">Se ha solicitado el restablecimiento de sus credenciales para acceder al sistema de aplicaciones de DM Desarrollo...</p>',
+	        '<p style="text-align: justify; font-size: 11pt;">Haga click en el enlace para proceder con el cambio de su contraseña:</p>',
+	        '<p style="text-align: justify; font-size: 11pt;">', V_LINK, '</p>',
+	        '<p style="font-size: 10pt;">Gracias,<br>Derrama Magisterial</p>',
+	        '<p style="font-size: 10pt;">Si no puede comunicarse envíe un correo a jguerreros@derrama.gob.pe.</p>',
+	        '</td></tr></table></p>'
+	    );
+	
+	    -- Simulación del REFCURSOR: solo retorna un SELECT
+	    SELECT '[DM BOLSA DE TRABAJO] Restablecimiento de contraseña' AS ASUNTO,
+	           V_CPERS_EMAIL AS EMAIL_DESTINO,
+	           V_CPERS_NOMBRES AS NOMBRE_DESTINO,
+	           '' AS CONTENIDO_TEXTO,
+	           V_CONTENIDO_HTML AS CONTENIDO_HTML,
+	           1 AS ESTADO;
+    
+    END IF;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `SP_USUARIO_INSERTAR` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_USUARIO_INSERTAR`(
+	IN P_NUARO_ID INT,
+    IN P_CUSUA_USERNAME VARCHAR(255),
+	IN P_CPERS_NOMBRES VARCHAR(255),
+    IN P_CPERS_APE_PATERNO VARCHAR(255),
+    IN P_CPERS_APE_MATERNO VARCHAR(255),
+    IN P_CPERS_CORREO VARCHAR(255), 
+    IN P_NROLE_ID INT,
+    IN P_NUARO_ESTADO INT,
+    IN P_NAUDI_REG_INS INT 
+)
+BEGIN
+	
+ 	DECLARE V_MENSAJE VARCHAR(1000) DEFAULT '';
+    DECLARE V_NPERS_ID INT DEFAULT 0;
+    DECLARE V_NUSUA_ID INT DEFAULT 0;
+    DECLARE V_RESULTADO INT DEFAULT 0;
+    DECLARE V_EXISTE_ROL INT DEFAULT 0;
+    DECLARE V_EXISTE_USERNAME INT DEFAULT 0;
+    DECLARE V_EXISTE_PERSONA INT DEFAULT 0;
+    DECLARE V_TOKEN VARCHAR(255);
+    
+ 	
+ 	START TRANSACTION;
+	
+ 	SET V_TOKEN = UUID();
+ 	
+ 	IF P_NUARO_ID > 0 THEN
+        SELECT NUSUA_ID INTO V_NUSUA_ID FROM dmbolsa.BT_USUARIO_ASIG_ROLES WHERE NUARO_ID = P_NUARO_ID;
+        SELECT NPERS_ID INTO V_NPERS_ID FROM dmbolsa.BT_USUARIO WHERE NUSUA_ID = V_NUSUA_ID;
+
+        SELECT COUNT(*) INTO V_EXISTE_ROL 
+        FROM dmbolsa.BT_USUARIO_ASIG_ROLES
+        WHERE NUARO_ID <> P_NUARO_ID AND NROLE_ID = P_NROLE_ID AND NUSUA_ID = V_NUSUA_ID;
+
+        IF V_EXISTE_ROL > 0 THEN
+            ROLLBACK;
+            SET V_RESULTADO = 0;
+            SET V_MENSAJE = 'El rol ingresado ya se encuentra registrado';
+            SELECT V_MENSAJE AS CMESSAGE, V_RESULTADO AS NSUCCESS;
+        ELSE
+        	UPDATE dmbolsa.BT_USUARIO_ASIG_ROLES
+	        SET NROLE_ID = P_NROLE_ID,
+	            NUARO_ESTADO = P_NUARO_ESTADO,
+	            NAUDI_REG_UPD = P_NAUDI_REG_INS,
+	            DAUDI_REG_UPD = NOW()
+	        WHERE NUARO_ID = P_NUARO_ID;
+        END IF;
+
+        SELECT COUNT(*) INTO V_EXISTE_USERNAME 
+        FROM dmbolsa.BT_USUARIO
+        WHERE NUSUA_ID <> V_NUSUA_ID AND CUSUA_USERNAME = P_CUSUA_USERNAME;
+
+        IF V_EXISTE_USERNAME > 0 THEN
+            ROLLBACK;
+            SET V_RESULTADO = 0;
+            SET V_MENSAJE = 'El username ingresado ya se encuentra registrado';
+            SELECT V_MENSAJE AS CMESSAGE, V_RESULTADO AS NSUCCESS;
+        ELSE
+        	UPDATE dmbolsa.BT_USUARIO
+	        SET CUSUA_USERNAME = P_CUSUA_USERNAME,
+	            CUSUA_TOKEN = V_TOKEN,
+	            DUSUA_TOKEN_VENC = NOW() + INTERVAL 1 DAY,
+	            NAUDI_REG_UPD = P_NAUDI_REG_INS,
+	            DAUDI_REG_UPD = NOW()
+	        WHERE NUSUA_ID = V_NUSUA_ID;
+        END IF;
+
+        SELECT COUNT(*) INTO V_EXISTE_PERSONA 
+        FROM dmbolsa.BT_PERSONA
+        WHERE NPERS_ID <> V_NPERS_ID
+        AND ((CPERS_NOMBRES = P_CPERS_NOMBRES AND CPERS_APE_PATERNO = P_CPERS_APE_PATERNO AND CPERS_APE_MATERNO = P_CPERS_APE_MATERNO)
+             OR CPERS_CORREO = P_CPERS_CORREO);
+
+        IF V_EXISTE_PERSONA > 0 THEN
+            ROLLBACK;
+            SET V_RESULTADO = 0;
+            SET V_MENSAJE = 'Los datos de la persona ya existen';
+            SELECT V_MENSAJE AS CMESSAGE, V_RESULTADO AS NSUCCESS;
+		ELSE
+			UPDATE dmbolsa.BT_PERSONA
+	        SET CPERS_NOMBRES = P_CPERS_NOMBRES,
+	            CPERS_APE_PATERNO = P_CPERS_APE_PATERNO,
+	            CPERS_APE_MATERNO = P_CPERS_APE_MATERNO,
+	            CPERS_CORREO = P_CPERS_CORREO,
+	            NAUDI_REG_UPD = P_NAUDI_REG_INS,
+	            DAUDI_REG_UPD = NOW()
+	        WHERE NPERS_ID = V_NPERS_ID;
+        END IF;
+
+    ELSE
+        -- INSERT NUEVO
+        SELECT COUNT(*) INTO V_EXISTE_PERSONA 
+        FROM dmbolsa.BT_PERSONA
+        WHERE ((CPERS_NOMBRES = P_CPERS_NOMBRES AND CPERS_APE_PATERNO = P_CPERS_APE_PATERNO AND CPERS_APE_MATERNO = P_CPERS_APE_MATERNO)
+              OR CPERS_CORREO = P_CPERS_CORREO);
+
+        IF V_EXISTE_PERSONA > 0 THEN
+            ROLLBACK;
+            SET V_RESULTADO = 0;
+            SET V_MENSAJE = 'Los datos de la persona ya existen';
+            SELECT V_MENSAJE AS CMESSAGE, V_RESULTADO AS NSUCCESS;
+        ELSE
+        	INSERT INTO dmbolsa.BT_PERSONA (CPERS_NOMBRES, CPERS_APE_PATERNO, CPERS_APE_MATERNO, CPERS_CORREO, NAUDI_REG_INS, DAUDI_REG_INS)
+	        VALUES (P_CPERS_NOMBRES, P_CPERS_APE_PATERNO, P_CPERS_APE_MATERNO, P_CPERS_CORREO, P_NAUDI_REG_INS, NOW());
+	        SET V_NPERS_ID = LAST_INSERT_ID();
+        END IF;
+
+        SELECT COUNT(*) INTO V_EXISTE_USERNAME 
+        FROM dmbolsa.BT_USUARIO
+        WHERE CUSUA_USERNAME = P_CUSUA_USERNAME;
+
+        IF V_EXISTE_USERNAME > 0 THEN
+            ROLLBACK;
+            SET V_RESULTADO = 0;
+            SET V_MENSAJE = 'El usuario ingresado ya se encuentra registrado';
+            SELECT V_MENSAJE AS CMESSAGE, V_RESULTADO AS NSUCCESS;
+		ELSE
+			INSERT INTO dmbolsa.BT_USUARIO (CUSUA_USERNAME, NPERS_ID, CUSUA_TOKEN, DUSUA_TOKEN_VENC, NAUDI_REG_INS, DAUDI_REG_INS)
+	        VALUES (P_CUSUA_USERNAME, V_NPERS_ID, V_TOKEN, NOW() + INTERVAL 1 DAY, P_NAUDI_REG_INS, NOW());
+	        SET V_NUSUA_ID = LAST_INSERT_ID();
+        END IF;
+
+        -- Verificar rol asignado
+	    SELECT COUNT(*) INTO V_EXISTE_ROL FROM dmbolsa.BT_USUARIO_ASIG_ROLES
+	    WHERE NUSUA_ID = V_NUSUA_ID AND NROLE_ID = P_NROLE_ID;
+	
+	    IF V_EXISTE_ROL > 0 THEN
+	   		ROLLBACK;
+	      	SET V_RESULTADO = 0;
+	      	SET V_MENSAJE = 'El rol ingresado ya se encuentra registrado';
+	    ELSE
+	    	INSERT INTO dmbolsa.BT_USUARIO_ASIG_ROLES (NUSUA_ID, NROLE_ID, NUARO_ESTADO, NAUDI_REG_INS, DAUDI_REG_INS)
+	        VALUES (V_NUSUA_ID, P_NROLE_ID, P_NUARO_ESTADO, P_NAUDI_REG_INS, NOW());
+	    END IF;
+    END IF;
+
+    COMMIT;
+    SET V_RESULTADO = 1;
+    SET V_MENSAJE = 'Operación completada con éxito.';
+    SELECT V_MENSAJE AS CMESSAGE, V_RESULTADO AS NSUCCESS;
 END ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2158,10 +2809,10 @@ BEGIN
     
     SELECT COUNT(1)
     INTO V_RECORDCOUNT
-    FROM dmforms.FRM_USUARIO U
-    INNER JOIN dmforms.FRM_PERSONA P ON U.NPERS_ID = P.NPERS_ID AND P.NPERS_ESTADO = 1 AND P.NAUDI_EST_REG = 1
-    INNER JOIN dmforms.FRM_USUARIO_ASIG_ROLES UAR ON U.NUSUA_ID = UAR.NUSUA_ID AND UAR.NAUDI_EST_REG = 1
-    INNER JOIN dmforms.FRM_ROLES R ON UAR.NROLE_ID = R.NROLE_ID AND R.NROLE_ESTADO = 1 AND R.NAUDI_EST_REG = 1
+    FROM dmbolsa.BT_USUARIO U
+    INNER JOIN dmbolsa.BT_PERSONA P ON U.NPERS_ID = P.NPERS_ID AND P.NPERS_ESTADO = 1 AND P.NAUDI_EST_REG = 1
+    INNER JOIN dmbolsa.BT_USUARIO_ASIG_ROLES UAR ON U.NUSUA_ID = UAR.NUSUA_ID AND UAR.NAUDI_EST_REG = 1
+    INNER JOIN dmbolsa.BT_ROLES R ON UAR.NROLE_ID = R.NROLE_ID AND R.NROLE_ESTADO = 1 AND R.NAUDI_EST_REG = 1
     WHERE U.NAUDI_EST_REG = 1 
         AND (P_NUARO_ESTADO = -1 OR UAR.NUARO_ESTADO = P_NUARO_ESTADO)
         AND (P_NTIRO_ID = -1 OR R.NTIRO_ID = P_NTIRO_ID)
@@ -2202,14 +2853,14 @@ BEGIN
         CONCAT(Y.NUSUA_ID, ' - ', X.CPERS_APE_PATERNO, ' ', X.CPERS_APE_MATERNO, ', ', X.CPERS_NOMBRES) AS USUARIO_RESPONSABLE,
         Z.CCADE_NOMBRE ESTADO_TEXTO,
         V_RECORDCOUNT AS V_RECORDCOUNT
-    FROM dmforms.FRM_USUARIO U
-    INNER JOIN dmforms.FRM_PERSONA P ON U.NPERS_ID = P.NPERS_ID
-    INNER JOIN dmforms.FRM_USUARIO_ASIG_ROLES UAR ON U.NUSUA_ID = UAR.NUSUA_ID
-    INNER JOIN dmforms.FRM_ROLES R ON UAR.NROLE_ID = R.NROLE_ID
-    INNER JOIN dmforms.FRM_TIPO_ROLES TR ON R.NTIRO_ID = TR.NTIRO_ID
-    LEFT JOIN dmforms.FRM_CATALOGO_DETALLE Z ON Z.NCATA_ID = 12 AND Z.CCADE_CODIGO = U.NUSUA_ESTADO
-    LEFT JOIN dmforms.FRM_USUARIO Y ON Y.NUSUA_ID = IFNULL(U.NAUDI_REG_UPD, U.NAUDI_REG_INS) AND Y.NUSUA_ESTADO = 1 AND Y.NAUDI_EST_REG = 1
-    LEFT JOIN dmforms.FRM_PERSONA X ON X.NPERS_ID = Y.NPERS_ID AND X.NPERS_ESTADO = 1 AND X.NAUDI_EST_REG = 1
+    FROM dmbolsa.BT_USUARIO U
+    INNER JOIN dmbolsa.BT_PERSONA P ON U.NPERS_ID = P.NPERS_ID
+    INNER JOIN dmbolsa.BT_USUARIO_ASIG_ROLES UAR ON U.NUSUA_ID = UAR.NUSUA_ID
+    INNER JOIN dmbolsa.BT_ROLES R ON UAR.NROLE_ID = R.NROLE_ID
+    INNER JOIN dmbolsa.BT_TIPO_ROLES TR ON R.NTIRO_ID = TR.NTIRO_ID
+    LEFT JOIN dmbolsa.BT_CATALOGO_DETALLE Z ON Z.NCATA_ID = 12 AND Z.CCADE_CODIGO = U.NUSUA_ESTADO
+    LEFT JOIN dmbolsa.BT_USUARIO Y ON Y.NUSUA_ID = IFNULL(U.NAUDI_REG_UPD, U.NAUDI_REG_INS) AND Y.NUSUA_ESTADO = 1 AND Y.NAUDI_EST_REG = 1
+    LEFT JOIN dmbolsa.BT_PERSONA X ON X.NPERS_ID = Y.NPERS_ID AND X.NPERS_ESTADO = 1 AND X.NAUDI_EST_REG = 1
     WHERE U.NAUDI_EST_REG = 1
         AND UAR.NAUDI_EST_REG = 1
         AND (P_NUARO_ESTADO = -1 OR UAR.NUARO_ESTADO = P_NUARO_ESTADO)
@@ -2294,4 +2945,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-23 17:21:42
+-- Dump completed on 2025-05-13 17:37:32
