@@ -17,3 +17,4 @@ D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.IAplicac
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.IAplicacion\obj\Release\net8.0\refint\DMBolsaTrabajo.IAplicacion.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.IAplicacion\obj\Release\net8.0\DMBolsaTrabajo.IAplicacion.pdb
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.IAplicacion\obj\Release\net8.0\ref\DMBolsaTrabajo.IAplicacion.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.IAplicacion\obj\Release\net8.0\DMBolsaTrabajo.IAplicacion.sourcelink.json

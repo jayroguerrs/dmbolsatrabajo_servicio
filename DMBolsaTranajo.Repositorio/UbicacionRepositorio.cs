@@ -14,29 +14,29 @@ namespace DMBolsaTrabajo.Repositorio
             _mysqlConexion = mysqlConexion;
         }
 
-        public async Task<List<EEventoCombo>> ListarDepartamentoCmb(EEventoFiltro request)
+        public async Task<List<EDepartamentoCombo>> ListarDepartamentoCmb(EDepartamentoFiltro request)
         {
-            List<EEventoCombo>? lista = null;
+            List<EDepartamentoCombo>? lista = null;
             var conn = _mysqlConexion.GetConnection();
-            var proc = "SP_EVENTO_LISTAR_CMB";
+            var proc = "SP_DEPARTAMENTO_LISTAR_CMB";
             try
             {
                 using (MySqlCommand cmd = new MySqlCommand(proc, conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("P_NEVEN_ESTADO", request.NEVEN_ESTADO);
+                    cmd.Parameters.AddWithValue("P_NDEPA_ESTADO", request.NDEPA_ESTADO);
                     conn.Open();
                     using MySqlDataReader reader = await cmd.ExecuteReaderAsync();
                     if (reader != null)
                     {
-                        lista = new List<EEventoCombo>();
-                        EEventoCombo? eRol = null;
+                        lista = new List<EDepartamentoCombo>();
+                        EDepartamentoCombo? eDepa = null;
                         while (await reader.ReadAsync())
                         {
-                            eRol = new EEventoCombo();
-                            if (!reader.IsDBNull(reader.GetOrdinal("NEVEN_ID"))) eRol.NEVEN_ID = reader.GetInt32("NEVEN_ID");
-                            if (!reader.IsDBNull(reader.GetOrdinal("CEVEN_NOMBRE"))) eRol.CEVEN_NOMBRE = reader.GetString("CEVEN_NOMBRE");
-                            lista.Add(eRol);
+                            eDepa = new EDepartamentoCombo();
+                            if (!reader.IsDBNull(reader.GetOrdinal("NDEPA_ID"))) eDepa.NDEPA_ID = reader.GetInt32("NDEPA_ID");
+                            if (!reader.IsDBNull(reader.GetOrdinal("CDEPA_NOMBRE"))) eDepa.CDEPA_NOMBRE = reader.GetString("CDEPA_NOMBRE");
+                            lista.Add(eDepa);
                         }
                     }
                 }
@@ -52,29 +52,30 @@ namespace DMBolsaTrabajo.Repositorio
             return lista;
         }
 
-        public async Task<List<EEventoCombo>> ListarDistritoCmb(EEventoFiltro request)
+        public async Task<List<EDistritoCombo>> ListarDistritoCmb(EDistritoFiltro request)
         {
-            List<EEventoCombo>? lista = null;
+            List<EDistritoCombo>? lista = null;
             var conn = _mysqlConexion.GetConnection();
-            var proc = "SP_EVENTO_LISTAR_CMB";
+            var proc = "SP_DISTRITO_LISTAR_CMB";
             try
             {
                 using (MySqlCommand cmd = new MySqlCommand(proc, conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("P_NEVEN_ESTADO", request.NEVEN_ESTADO);
+                    cmd.Parameters.AddWithValue("P_NDEPA_ID", request.NDEPA_ID);
+                    cmd.Parameters.AddWithValue("P_NDIST_ESTADO", request.NDIST_ESTADO);
                     conn.Open();
                     using MySqlDataReader reader = await cmd.ExecuteReaderAsync();
                     if (reader != null)
                     {
-                        lista = new List<EEventoCombo>();
-                        EEventoCombo? eRol = null;
+                        lista = new List<EDistritoCombo>();
+                        EDistritoCombo? eDistrito = null;
                         while (await reader.ReadAsync())
                         {
-                            eRol = new EEventoCombo();
-                            if (!reader.IsDBNull(reader.GetOrdinal("NEVEN_ID"))) eRol.NEVEN_ID = reader.GetInt32("NEVEN_ID");
-                            if (!reader.IsDBNull(reader.GetOrdinal("CEVEN_NOMBRE"))) eRol.CEVEN_NOMBRE = reader.GetString("CEVEN_NOMBRE");
-                            lista.Add(eRol);
+                            eDistrito = new EDistritoCombo();
+                            if (!reader.IsDBNull(reader.GetOrdinal("NDIST_ID"))) eDistrito.NDIST_ID = reader.GetInt32("NDIST_ID");
+                            if (!reader.IsDBNull(reader.GetOrdinal("CDIST_NOMBRE"))) eDistrito.CDIST_NOMBRE = reader.GetString("CDIST_NOMBRE");
+                            lista.Add(eDistrito);
                         }
                     }
                 }
@@ -89,5 +90,6 @@ namespace DMBolsaTrabajo.Repositorio
             }
             return lista;
         }
+   
     }
 }

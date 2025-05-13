@@ -127,7 +127,7 @@ namespace DMBolsaTrabajo.Repositorio
             EUsuarioRol usuario = null;
 
             var conn = _mysqlConexion.GetConnection();
-            var proc = "PG_FACT_USUARIO_ASIG_ROLES.PA_FACT_OBTENER_DATOS_POR_ROL";
+            var proc = "SP_USUARIO_ASIG_ROLES_OBTENER_DATOS_POR_ROL";
             try
             {
                 using (MySqlCommand cmd = new(proc, conn))
@@ -255,7 +255,7 @@ namespace DMBolsaTrabajo.Repositorio
             int result = 0;
             string resMensaje = "";
             var conn = _mysqlConexion.GetConnection();
-            var proc = "PG_FACT_USUARIO.PA_FACT_INSERTAR";
+            var proc = "SP_USUARIO_INSERTAR";
             try
             {
                 using (MySqlCommand cmd = new(proc, conn))
@@ -269,9 +269,8 @@ namespace DMBolsaTrabajo.Repositorio
                     cmd.Parameters.AddWithValue("P_CPERS_CORREO", request.CPERS_CORREO);
                     cmd.Parameters.AddWithValue("P_NROLE_ID", request.NROLE_ID);
                     cmd.Parameters.AddWithValue("P_NUARO_ESTADO", request.NUARO_ESTADO);
-                    cmd.Parameters.AddWithValue("P_NAUDI_USR_INS", request.NAUDI_USR_INS);
+                    cmd.Parameters.AddWithValue("P_NAUDI_REG_INS", request.NAUDI_USR_INS);
                     conn.Open();
-                    await cmd.ExecuteNonQueryAsync();
 
                     using (MySqlDataReader reader = await cmd.ExecuteReaderAsync())
                     {
@@ -299,7 +298,7 @@ namespace DMBolsaTrabajo.Repositorio
             int result = 0;
             string resMensaje = "";
             var conn = _mysqlConexion.GetConnection();
-            var proc = "PG_FACT_USUARIO.PA_FACT_ELIMINAR";
+            var proc = "SP_USUARIO_ELIMINAR";
             try
             {
                 using (MySqlCommand cmd = new(proc, conn))

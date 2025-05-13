@@ -19,3 +19,4 @@ D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Map\obj\
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Map\obj\Debug\net8.0\refint\DMBolsaTrabajo.Map.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Map\obj\Debug\net8.0\DMBolsaTrabajo.Map.pdb
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Map\obj\Debug\net8.0\ref\DMBolsaTrabajo.Map.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Map\obj\Debug\net8.0\DMBolsaTrabajo.Map.sourcelink.json

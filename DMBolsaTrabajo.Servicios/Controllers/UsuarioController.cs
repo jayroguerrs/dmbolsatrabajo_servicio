@@ -54,6 +54,14 @@ namespace DMBolsaTrabajo.Servicios.Controllers
             return Ok(response);
         }
 
+        [HttpPatch("eliminar")]
+        [SwaggerResponse(Constants.Ok, Constants.Listo, typeof(RespuestaGen<Int32>))]
+        public async Task<ActionResult> Eliminar([FromBody] UsuarioDelDto request)
+        {
+            request.Usuario = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            return Ok(await _usuarioAplicacion.Eliminar(request));
+        }
+
         [HttpPatch("actualizarDatos")]
         [SwaggerResponse(Constants.Ok, Constants.Listo, typeof(RespuestaGen<Int32>))]
         public async Task<ActionResult> ActualizarDatos([FromBody] UsuarioRequestDto request)

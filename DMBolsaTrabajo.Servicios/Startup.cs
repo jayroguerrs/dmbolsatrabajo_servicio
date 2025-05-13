@@ -17,6 +17,7 @@ using DMBolsaTrabajo.Repositorio;
 using DMBolsaTrabajo.ServiciosExt;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.FileProviders;
 
 namespace DMBolsaTrabajo.Servicios
 {
@@ -115,6 +116,9 @@ namespace DMBolsaTrabajo.Servicios
             services.AddTransient<IUsuarioAplicacion, UsuarioAplicacion>();
             services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
 
+            services.AddTransient<IUbicacionAplicacion, UbicacionAplicacion>();
+            services.AddTransient<IUbicacionRepositorio, UbicacionRepositorio>();
+
             services.AddTransient<IServicioEnviarCorreo, ServicioEnviarCorreo>();
 
             services.AddHttpClient();
@@ -137,7 +141,7 @@ namespace DMBolsaTrabajo.Servicios
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DM Formularios", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DM Bolsa de Trabajo", Version = "v1" });
             });
 
             services.AddSwaggerGen(options =>
@@ -173,6 +177,52 @@ namespace DMBolsaTrabajo.Servicios
             {
                 context.Request.EnableBuffering();
                 return next(context);
+            });
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "Public", "Images")
+                ),
+                RequestPath = "/f/Images",
+                ServeUnknownFileTypes = true, // Solo si necesitas servir tipos no estándar
+                OnPrepareResponse = ctx =>
+                {
+                    // Cache por 1 día (opcional)
+                    ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=86400");
+                }
+            });
+
+            // Configuración para la carpeta Forms con un RequestPath personalizado
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "Public", "Postulaciones")
+                ),
+                RequestPath = "/f/SecureFiles/Postulaciones", // Ruta personalizada
+                ServeUnknownFileTypes = true,
+                OnPrepareResponse = ctx =>
+                {
+                    ctx.Context.Response.Headers.Append("Cache-Control", "private,max-age=0");
+                }
+            });
+
+            // Middleware para proteger el acceso a /SecureForms
+            app.Use(async (context, next) =>
+            {
+                var path = context.Request.Path.Value;
+
+                // Verifica si el acceso es a /SecureForms
+                if (path.StartsWith("/f/SecureFiles/Postulaciones", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (!context.User.Identity.IsAuthenticated)
+                    {
+                        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                        return;
+                    }
+                }
+
+                await next();
             });
         }
     }

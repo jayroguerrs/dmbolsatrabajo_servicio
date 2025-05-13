@@ -37,6 +37,22 @@ namespace DMBolsaTrabajo.Dto.Puestos
         public string RecaptchaToken { get; set; }
     }
 
+    public class PostulantesFilterRequestDto : PaginadoRequestDto
+    {
+        public string? NumeroDocumento { get; set; }
+        public string? Nombres { get; set; }
+        public int PuestoId { get; set; }
+        private int? _Estado { get; set; } = -1;
+        public int? Estado
+        {
+            get { return _Estado; }
+            set
+            {
+                _Estado = value ?? -1;
+            }
+        }
+    }
+
     public class PuestosFilterNoCaptchaRequestDto : PaginadoRequestDto
     {
         public DateOnly? FechaRegistro { get; set; }
@@ -56,19 +72,23 @@ namespace DMBolsaTrabajo.Dto.Puestos
 
     public class PuestosInsUpdDto : UsuarioBase
     {
-        public int? IdRolUsuario { get; set; }
-        public string Nombres { get; set; }
-        public string ApellidoPaterno { get; set; }
-        public string ApellidoMaterno { get; set; }
-        public string Codigo { get; set; }
-        public string? Correo { get; set; }
-        public int? RolId { get; set; }
+        public int? Id { get; set; }
+        public string Titulo { get; set; }
+        public string Descripcion { get; set; }
+        public DateOnly? FechaInicial { get; set; }
+        public DateOnly? FechaFinal { get; set; }
+        public int DepartamentoId { get; set; }
+        public int DistritoId { get; set; }
         public int Estado { get; set; }
     }
 
-   
     public class PuestosDelDto : UsuarioBase
     {
         public int Id { get; set; }
+    }
+    
+    public class PuestosEstadoDto : UsuarioBase
+    {
+        public int PuestoId { get; set; }
     }
 }

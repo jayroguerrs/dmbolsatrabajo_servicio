@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DMBolsaTranajo.Repositorio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21cae163ecdf0d17c9e4103994ecea62bfccf46f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMBolsaTranajo.Repositorio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMBolsaTranajo.Repositorio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

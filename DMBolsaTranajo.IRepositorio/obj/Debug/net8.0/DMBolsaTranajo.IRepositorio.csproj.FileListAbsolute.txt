@@ -13,3 +13,4 @@ D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IReposit
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\refint\DMBolsaTranajo.IRepositorio.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.pdb
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\ref\DMBolsaTranajo.IRepositorio.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTranajo.IRepositorio\obj\Debug\net8.0\DMBolsaTranajo.IRepositorio.sourcelink.json

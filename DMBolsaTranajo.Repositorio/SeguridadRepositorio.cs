@@ -65,14 +65,14 @@ namespace DMBolsaTrabajo.Repositorio
         public async Task<ECorreoElectronico> EnviarCorreoRecuperacion(string email, string url)
         {
             var conn = _mysqlConexion.GetConnection();
-            var proc = "PG_FACT_USUARIO.PA_FACT_ENVIAR_RESTABLEC";
+            var proc = "SP_USUARIO_ENVIAR_RESTABLECIMIENTO";
             ECorreoElectronico? usuarioConfirmacion = null;
             try
             {
                 using (MySqlCommand cmd = new(proc, conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("P_CPERS_CORREO", email);
+                    cmd.Parameters.AddWithValue("P_CPERS_EMAIL", email);
                     cmd.Parameters.AddWithValue("P_URL", url);
                     conn.Open();
                     using MySqlDataReader reader = await cmd.ExecuteReaderAsync();
@@ -107,7 +107,7 @@ namespace DMBolsaTrabajo.Repositorio
             int result = 0;
             string resMensaje = "";
             var conn = _mysqlConexion.GetConnection();
-            var proc = "PG_FACT_USUARIO.PA_FACT_VALIDAR_CREDENCIAL";
+            var proc = "SP_USUARIO_VALIDAR_CREDENCIAL";
             try
             {
                 using (MySqlCommand cmd = new(proc, conn))

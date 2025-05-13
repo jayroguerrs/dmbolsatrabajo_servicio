@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using DMBolsaTrabajo.Dominio;
 using DMBolsaTrabajo.Dto.Puestos;
+using DMBolsaTrabajo.Dto.Usuario;
 using DMBolsaTrabajo.IAplicacion;
 using DMBolsaTrabajo.IRepositorio;
+using DMBolsaTrabajo.Repositorio;
 using DMBolsaTrabajo.ServiciosExt;
 using DMBolsaTrabajo.ServiciosExt.Recaptcha;
 using DMBolsaTrabajo.Utilitarios.EstadoRespuesta;
@@ -69,6 +71,42 @@ namespace DMBolsaTrabajo.Aplicacion
             return respuesta;
         }
 
+        public async Task<Respuesta> ListarPostulantesPaginado(PostulantesFilterRequestDto request)
+        {
+            var respuesta = new Respuesta();
+
+            try
+            {
+                var eUsuarioFiltro = _mapper.Map<EPostulantesFiltro>(request);
+                var resultado = await _repositorio.ListarPostulantesPaginado(eUsuarioFiltro);
+
+                if (resultado.lstPostulantesPaginado.Count >= 0)
+                {
+                    var data = new ListarPostulantesResponseDto
+                    {
+                        NumeroPagina = request.NumeroPagina,
+                        TamanioPagina = request.TamanioPagina,
+                        lista = _mapper.Map<List<PostulantesResponseDto>>(resultado.lstPostulantesPaginado),
+                        Total = resultado.RECORDCOUNT
+                    };
+                    respuesta.data = data;
+                    respuesta.success = true;
+                }
+                else
+                {
+                    respuesta.validations.Add(new GenericMessage("warn", "No se han encontrado registros"));
+                    respuesta.success = false;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                respuesta.validations.Add(new GenericMessage("error", ex.Message));
+                respuesta.success = false;
+            }
+            return respuesta;
+        }
+
         public async Task<Respuesta> ListarPaginadoNoCaptcha(PuestosFilterNoCaptchaRequestDto request)
         {
             var respuesta = new Respuesta();
@@ -113,7 +151,7 @@ namespace DMBolsaTrabajo.Aplicacion
                 var resultado = await _repositorio.ObtenerPorId(id);
                 if (resultado != null)
                 {
-                    respuesta.data = _mapper.Map<PuestosResponseDto>(resultado);
+                    respuesta.data = _mapper.Map<PuestosResponsePorIdDto>(resultado);
                     respuesta.success = true;
                 }
                 else
@@ -207,6 +245,87 @@ namespace DMBolsaTrabajo.Aplicacion
                 else
                 {
                     respuesta.validations.Add(new GenericMessage("error", "Error en la validación del reCAPTCHA"));
+                    respuesta.success = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.validations.Add(new GenericMessage("error", ex.Message));
+                respuesta.success = false;
+            }
+            return respuesta;
+        }
+
+        public async Task<Respuesta> Eliminar(PuestosDelDto request)
+        {
+            var respuesta = new Respuesta();
+            try
+            {
+                var eUsuario = _mapper.Map<EPuestosDel>(request);
+                var (resultado, msj) = await _repositorio.Eliminar(eUsuario);
+
+                if (resultado > 0)
+                {
+                    respuesta.data = resultado;
+                    respuesta.success = true;
+                }
+                else
+                {
+                    respuesta.validations.Add(new GenericMessage("warn", msj));
+                    respuesta.success = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.validations.Add(new GenericMessage("error", ex.Message));
+                respuesta.success = false;
+            }
+            return respuesta;
+        }
+
+        public async Task<Respuesta> Insertar(PuestosInsUpdDto request)
+        {
+            var respuesta = new Respuesta();
+            try
+            {
+                var eUsuario = _mapper.Map<EPuestosInsUpd>(request);
+                var (resultado, msj) = await _repositorio.Insertar(eUsuario);
+
+                if (resultado > 0)
+                {
+                    respuesta.data = resultado;
+                    respuesta.success = true;
+                }
+                else
+                {
+                    respuesta.validations.Add(new GenericMessage("warn", msj));
+                    respuesta.success = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.validations.Add(new GenericMessage("error", ex.Message));
+                respuesta.success = false;
+            }
+            return respuesta;
+        }
+
+        public async Task<Respuesta> CambiarEstado(PuestosEstadoDto request)
+        {
+            var respuesta = new Respuesta();
+            try
+            {
+                var eFiltro = _mapper.Map<EEstadoCambio>(request);
+                var (resultado, msj) = await _repositorio.CambiarEstado(eFiltro);
+
+                if (resultado > 0)
+                {
+                    respuesta.data = resultado;
+                    respuesta.success = true;
+                }
+                else
+                {
+                    respuesta.validations.Add(new GenericMessage("warn", msj));
                     respuesta.success = false;
                 }
             }

@@ -9,3 +9,4 @@ D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dominio\
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dominio\obj\Debug\net8.0\refint\DMBolsaTrabajo.Dominio.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dominio\obj\Debug\net8.0\DMBolsaTrabajo.Dominio.pdb
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dominio\obj\Debug\net8.0\ref\DMBolsaTrabajo.Dominio.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dominio\obj\Debug\net8.0\DMBolsaTrabajo.Dominio.sourcelink.json

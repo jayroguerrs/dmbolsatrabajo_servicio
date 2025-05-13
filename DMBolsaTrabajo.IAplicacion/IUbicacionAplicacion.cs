@@ -1,4 +1,4 @@
-﻿using DMBolsaTrabajo.Dto.Rol;
+﻿using DMBolsaTrabajo.Dto.Ubicacion;
 using DMBolsaTrabajo.Utilitarios.EstadoRespuesta;
 
 namespace DMBolsaTrabajo.IAplicacion

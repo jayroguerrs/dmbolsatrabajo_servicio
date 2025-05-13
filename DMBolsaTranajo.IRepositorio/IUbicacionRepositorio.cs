@@ -4,7 +4,7 @@ namespace DMBolsaTrabajo.IRepositorio
 {
     public interface IUbicacionRepositorio
     {
-        Task<List<EEventoCombo>> ListarDepartamentoCmb(EEventoFiltro request);
-        Task<List<EEventoCombo>> ListarDistritoCmb(EEventoFiltro request);
+        Task<List<EDepartamentoCombo>> ListarDepartamentoCmb(EDepartamentoFiltro request);
+        Task<List<EDistritoCombo>> ListarDistritoCmb(EDistritoFiltro request);
     }
 }

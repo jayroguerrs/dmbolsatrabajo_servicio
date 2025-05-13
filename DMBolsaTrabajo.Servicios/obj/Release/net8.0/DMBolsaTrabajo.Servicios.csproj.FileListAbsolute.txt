@@ -242,3 +242,4 @@ D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Servicio
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Servicios\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Servicios\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Servicios\bin\Release\net8.0\Microsoft.Extensions.Http.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Servicios\obj\Release\net8.0\DMBolsaTrabajo.Servicios.sourcelink.json

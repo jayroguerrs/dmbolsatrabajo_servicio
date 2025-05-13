@@ -1,4 +1,5 @@
 ﻿using DMBolsaTrabajo.Dto.Rol;
+using DMBolsaTrabajo.Dto.Ubicacion;
 using DMBolsaTrabajo.IAplicacion;
 using DMBolsaTrabajo.Utilitarios;
 using DMBolsaTrabajo.Utilitarios.EstadoRespuesta;

@@ -9,3 +9,4 @@ D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Release\net8.0\refint\DMBolsaTrabajo.Dto.dll
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Release\net8.0\DMBolsaTrabajo.Dto.pdb
 D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Release\net8.0\ref\DMBolsaTrabajo.Dto.dll
+D:\PROYECTOS\Bolsa de Trabajo\Bolsa de Trabajo Servicios\DMBolsaTrabajo.Dto\obj\Release\net8.0\DMBolsaTrabajo.Dto.sourcelink.json

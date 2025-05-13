@@ -19,11 +19,38 @@ namespace DMBolsaTrabajo.Dto.Puestos
         public string Distrito { get; set; }
         public string Departamento { get; set; }
         public string Imagen { get; set; }
+        public DateOnly FechaIni { get; set; }
         public DateOnly FechaFin { get; set; }
         public string? Ubicacion { get; set; }
         public DateTime? FechaModificacion { get; set; }
         public string? UsuarioResponsable { get; set; }
         public string? EstadoTexto { get; set; }
+        public int Estado { get; set; }
+    }
+
+    public class PostulantesResponseDto
+    {
+        public int? Numero { get; set; }
+        public int Id { get; set; }
+        public string Nombres { get; set; }
+        public string Correo { get; set; }
+        public string Archivo { get; set; }
+        public DateTime? FechaModificacion { get; set; }
+        public string? UsuarioResponsable { get; set; }
+        public string? EstadoTexto { get; set; }
+    }
+
+    public class PuestosResponsePorIdDto
+    {
+        public int Id { get; set; }
+        public string Titulo { get; set; }
+        public string Descripcion { get; set; }
+        public int DistritoId { get; set; }
+        public int DepartamentoId { get; set; }
+        public string Imagen { get; set; }
+        public DateOnly FechaIni { get; set; }
+        public DateOnly FechaFin { get; set; }
+        public int? Estado { get; set; }
     }
 
     public class UsuarioRolResponseDto
@@ -58,7 +85,6 @@ namespace DMBolsaTrabajo.Dto.Puestos
 
     public class UsuarioInicialDto
     {
-
         public int Id { get; set; }
         public int IdRol { get; set; }
         public string CodigoRol { get; set; }
@@ -87,6 +113,11 @@ namespace DMBolsaTrabajo.Dto.Puestos
     public class ListarPuestosResponseDto : PaginadoResponseDto
     {
         public List<PuestosResponseDto> lista { get; set; }
+    }
+
+    public class ListarPostulantesResponseDto : PaginadoResponseDto
+    {
+        public List<PostulantesResponseDto> lista { get; set; }
     }
 
     public class PostularInsUpdDto

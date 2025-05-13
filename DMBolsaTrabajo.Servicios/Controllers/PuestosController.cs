@@ -31,6 +31,12 @@ namespace DMBolsaTrabajo.Servicios.Controllers
             return Ok(await _puestosAplicacion.ListarPaginado(requestFilterDto));
         }
 
+        [HttpPost("ListarPostulantesPaginado")]
+        public async Task<ActionResult> ListarPostulantesPaginado([FromBody] PostulantesFilterRequestDto requestFilterDto)
+        {
+            return Ok(await _puestosAplicacion.ListarPostulantesPaginado(requestFilterDto));
+        }
+
         [HttpPost("ListarPaginadoNoCaptcha")]
         public async Task<ActionResult> ListarPaginadoNoCaptcha([FromBody] PuestosFilterNoCaptchaRequestDto requestFilterDto)
         {
@@ -45,11 +51,36 @@ namespace DMBolsaTrabajo.Servicios.Controllers
         }
 
         [HttpPost("postular")]
-        [SwaggerResponse(Constants.Ok, Constants.Aceptado, typeof(RespuestaGen<Int32>))]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<ActionResult> Postular([FromForm] IFormFile archivo, [FromForm] PostularInsUpdDto request)
         {
             var response = await _puestosAplicacion.Postular(archivo, request);
             return Ok(response);
+        }
+
+        [HttpPatch("eliminar")]
+        [SwaggerResponse(Constants.Ok, Constants.Listo, typeof(RespuestaGen<Int32>))]
+        public async Task<ActionResult> Eliminar([FromBody] PuestosDelDto request)
+        {
+            request.Usuario = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            return Ok(await _puestosAplicacion.Eliminar(request));
+        }
+
+        [HttpPost("Insertar")]
+        [SwaggerResponse(Constants.Ok, Constants.Aceptado, typeof(RespuestaGen<Int32>))]
+        public async Task<ActionResult> Insertar([FromBody] PuestosInsUpdDto request)
+        {
+            request.Usuario = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            var response = await _puestosAplicacion.Insertar(request);
+            return Ok(response);
+        }
+
+        [HttpPatch("actualizarEstado")]
+        [SwaggerResponse(Constants.Ok, Constants.Listo, typeof(RespuestaGen<Int32>))]
+        public async Task<ActionResult> CambiarEstado([FromBody] PuestosEstadoDto request)
+        {
+            request.Usuario = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            return Ok(await _puestosAplicacion.CambiarEstado(request));
         }
     }
 }
